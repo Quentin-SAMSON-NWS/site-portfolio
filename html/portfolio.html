@@ -11,77 +11,250 @@
 
     <link rel="icone" href="" />
     <link rel="stylesheet" href="../CSS/portfolio.css" />
+    <link rel="stylesheet" href="../CSS/maincv.css" />
+    <link rel="stylesheet" href="../CSS/formulaire.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Passion+One:wght@400;700;900&family=Titan+One&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
     <!-- HEAD lien essayer de faire un site horizontale -->
     <header class="fixed-top navbar navbar-top-right">
+        <section>
+            <div>
+              <a class = "logo" href ="#accueil"> <img class = "image-header" src="/image/icone de site.svg" /></a>
+              </div> 
+        </section>
+        <section>
       <nav>
-        <ul>
-          <li id="logo-menu">
-            <button href="/html/portfolio.html">
-              <img src="/image/icone de site.svg" />
+        <ul class = "nav-list">
             </button>
+          <li>
+            <a class = "menu" href="#accueil" >Accueil</a>
           </li>
           <li>
-            <a href="#a-propos" id="à propos">à propos</a>
+            <a class = "menu" href="#a-propos" >a-propos</a>
           </li>
           <li>
-            <a href="#competences" id="Compétences">compétences</a>
+            <a class = "menu" href="#Competences" >Compétences</a>
           </li>
           <li>
-            <a href="#parcours" id="Parcours">Diplomes</a>
+            <a class = "menu" href="#portfolio" >Portfolio</a>
           </li>
           <li>
-            <a href="#Portfolio" id="Portfolio">Portfolio</a>
+            <a class = "menu" href="#portfolio" >Portfolio</a>
           </li>
-          <li>
-            <a href="#Contacter" id="Conatcter">Me contacter</a>
-          </li>
-          <li>
-            <button><img src="image/icone de site.svg" /></button>
+          <li class = "right">
+            <a class = "menu" href="#Contacter" >Me contacter</a>
           </li>
         </ul>
       </nav>
+      </section>
     </header>
-    <h1>Quentin Samson</h1>
-    <img src="" />
+    <section class = "main">
+      <section class = "Presentation">
+        <div class = "presentation-image-prenom">
+          <img class = "presentation-image" src="/image/QUENTIN.jfif" />
+          <h1 class = "prenom-presentation">Quentin Samson</h1>
+        </div>
+        <div class = "presentation-text">
+          
+            <h2>Bonjour et bienvenue sur mon portfolio !</h2>
+          <p>
+          Je suis étudiant à la Normandie Web School, une formation dédiée à l’univers du digital et de la création numérique. Passionné par la technologie, je souhaite donner vie à mes idées grâce aux Logiciels informatique.
+            <p>
+          Avant d’intégrer cette école, j’ai suivi deux années de licence informatique à Saint-Étienne-du-Rouvray. Ce parcours m’a permis de développer une bases dans la programmation, me fournissant une compréhension technique qui complète parfaitement mon orientation actuelle vers le graphisme et le design numérique.
+            </p>
+          Aujourd’hui, je cherche à enrichir mes compétences dans le domaine du graphisme pour créer des projets uniques et impactants. Que ce soit par la conception de visuels captivants, d’interfaces utilisateur intuitives, ou encore d’animations engageantes, mon objectif est d’allier esthétique et fonction pour répondre aux besoins des utilisateurs ou d'inspirer les autres.
+            <p>
+          Je suis convaincu que le monde numérique est un espace sans limites pour l’innovation et la créativité. En travaillant sur divers projets, je m’efforce de repousser mes propres limites et d’explorer de nouveaux horizons dans le design.
+            </p>
+          Si vous partagez cette vision ou êtes intéressé par une collaboration, je serais ravi d’échanger avec vous !
+          </p>
+        </div>
+      </section>
     <div>
       <h2 id="a-propos">A propos de moi</h2>
       <p>
         Bonjour moi c'est quentin j'ai 20 ans et je suis passioné dans le
         domaine de la création informatique
       </p>
+      <section class = "Competences">
       <h2 id="Competences">Compétences</h2>
       <!-- réfléchir pour la disposition des compétences -->
+        
+       </section>
     </div>
-    <section></section>
+    </section>
     <section>
       <h2 id="Portfolio">Portfolio</h2>
       <h3 id="Projet">Projet</h3>
     </section>
-    <section>
-      <h1 id="Contacter">Contacter moi</h1>
-      <form>
-        <div>
-          <label for="Prenom">Prénom</label>
-          <input id="Prenom" type="text" name="Prenom" required />
-
-          <label for="Nom">Nom</label>
-          <input id="nom" type="text" name="Nom" required />
-
-          <label for="email">E-mail</label>
-          <input id="email" type="email" name="email" required />
-
-          <label for="password">Mot de passe</label>
-          <input id="password" type="password" required />
-
-          <button type="submit">Submit</button>
-          <button type="reset">reset</button>
-
-          <textarea required rows="5" colspan="5"></textarea>
-        </div>
-      </form>
+    <section class = "contacter-moi">
+      <h1 class="contacter">Contacter moi</h1>
     </section>
+    <section  class = "cv">
+      <section class="header">
+        <div>
+          <h1 class="Prenom">Quentin SAMSON</h1>
+
+          <ul class="information-perso">
+            <li>numéro de tél: 06 06 06 06 06</li>
+            <li>linkedin: Quentin SAMSON</li>
+            <li>adresse mail: qsamson@normadiewebschool.fr</li>
+          </ul>
+        </div>
+        <div class="titre-header">
+          je recherche une alternance/stage en communication graphique ou
+          digitale.
+        </div>
+        <div class="portfolio">
+          Mon portfolio
+          <img class="image_fleche" src="/image/fleche-dessinee-a-droite.png" />
+        </div>
+      </section>
+      <div class="main-css">
+        <section class="competences-skills">
+          <h2 class="titre-competences-skills">compétences</h2>
+          <table class="competences">
+            <thead>
+              <tr>
+                <th class="sous-titre-competences" colspan="2">
+                  Logiciels/lagage
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>illustrator<img src="" alr="illu" /></td>
+                <td>wordpress</td>
+              </tr>
+              <tr>
+                <td>lightroom<img src="" alr="illu" /></td>
+                <td>HTML/CSS</td>
+              </tr>
+              <tr>
+                <td>photoshop<img src="" alr="illu" /></td>
+                <td>Javascript</td>
+              </tr>
+              <tr>
+                <td>InDesign<img src="" alr="illu" /></td>
+                <td>PHP</td>
+              </tr>
+              <tr>
+                <td>after Effect<img src="" alr="illu" /></td>
+                <td>MYsql</td>
+              </tr>
+              <tr>
+                <td>Première pro<img src="" alr="illu" /></td>
+              </tr>
+            </tbody>
+          </table>
+          <table>
+            <thead>
+              <tr>
+                <th colspan="2">Missions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>montage vidéo<img src="" alr="illu" /></td>
+                <td>miniature vidéo</td>
+              </tr>
+              <tr>
+                <td>retouche photo<img src="" alr="illu" /></td>
+                <td>marketing</td>
+              </tr>
+              <tr>
+                <td>affiche/flyers<img src="" alr="illu" /></td>
+                <td>E-Commerce</td>
+              </tr>
+              <tr>
+                <td>Création de site Web<img src="" alr="illu" /></td>
+                <td>PHP</td>
+              </tr>
+            </tbody>
+          </table>
+          <h2 class="titre-competences-skills">Soft Skills</h2>
+          <ol>
+            <li>Esprit d'équipe</li>
+            <li>Créatif</li>
+            <li>Capacité d'adaptation</li>
+            <li>Plannification et organisation</li>
+            <li>anticipation des obstacles</li>
+          </ol>
+          <h2 class="titre-competences-skills">Centres d'intéret</h2>
+          <ul class="liste-centre-dinteret">
+            <li>jeux vidéo</li>
+            <li>création numérique</li>
+            <li>Musculation</li>
+            <li>Cuisine</li>
+            <li>Voyage</li>
+          </ul>
+        </section>
+        <section class="projet">
+          <h2 class="titre-ovale">Projet profesionalisant</h2>
+          <p>Alimentation de réseaux sociaux</p>
+          <ul>
+            <li>montage vidéo/miniature</li>
+            <li>
+              affiche événementielle, logo, charte graphique pour team e-sport
+            </li>
+            <li>
+              Création de site web avec wordpress ou langage de programmation
+            </li>
+          </ul>
+          <h2 class="titre-ovale">Formation</h2>
+          <h3>Normandie Web School (2024-2027)</h3>
+          <ul>
+            <li>montage vidéo/miniature</li>
+            <li>
+              afficheévénementielle, logo, charte graphique pour team e-sport
+            </li>
+            <li>
+              Création de site web avec wordpress ou langage de programmation
+            </li>
+          </ul>
+          <div>
+            <h3>Licence Informatique (2022-20224)</h3>
+            <ul>
+              <li>Saint Étienne du Rouvray</li>
+              <li>l’UFR Sciences et Techniques</li>
+              <li>Rouen</li>
+            </ul>
+            <div>
+              <h3>Baccalauréat (2021-2022)</h3>
+            </div>
+            <div>
+              Baccalauréat spécialités Maths et Numérique et sciences de
+              l’informatique
+            </div>
+            <div>Lycée Delamare Deboutteville</div>
+          </div>
+        </section>
+      </div>
+    </section>
+      <div class="form-container">
+        <form class="form">
+          <div class="form-group">
+            <label for="Nom et Prénom">Nom et Prénom</label>
+            <input type="text" id="Nom-Prenom" name="Nom-Prenom" required>
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="textarea">écrivez votre message</label>
+            <textarea name="textarea" id="textarea" rows="10" cols="50" required>          </textarea>
+          </div>
+          <button class="form-submit-btn" type="submit">Submit</button>
+        </form>
+    </div>
   </body>
 </html>
