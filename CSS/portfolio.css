@@ -3,23 +3,22 @@
   font-weight: 400;
   font-style: normal;
 }
-
-@media screen and (min-width: 728px) {
-  .fixed-top {
-    position: sticky;
-    top: 0;
-    z-index: 0;
-  }
-
-  .navbar {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    padding-bottom: 0.5rem;
-    background-color: black;
-    color: white;
-  }
+.Presentation {
+  display: flex;
+  width: 85%;
+  background: linear-gradient(#212121, #212121) padding-box,
+    linear-gradient(145deg, transparent 35%, #e81cff, #40c9ff) border-box;
+  border: 2px solid transparent;
+  padding: 1em 1em;
+  font-size: 14px;
+  font-family: inherit;
+  color: whitesmoke;
+  gap: 20px;
+  box-sizing: border-box;
+  border-radius: 26px;
+  margin: auto;
+  margin-top: 2em;
+  flex-direction: column;
 }
 
 .main {
@@ -140,25 +139,15 @@ body {
 }
 
 /*object-fit*/
-.Presentation {
-  display: flex;
-  width: 85%;
-  background: linear-gradient(#212121, #212121) padding-box,
-    linear-gradient(145deg, transparent 35%, #e81cff, #40c9ff) border-box;
-  border: 2px solid transparent;
-  padding: 1em 1em;
-  font-size: 14px;
-  font-family: inherit;
-  color: whitesmoke;
-  gap: 20px;
-  box-sizing: border-box;
-  border-radius: 26px;
-  margin: auto;
-  margin-top: 2em;
-}
 
 .presentation-image-prenom {
   width: 25%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  object-fit: contain;
 }
 
 .presentation-text {
@@ -166,12 +155,33 @@ body {
 }
 
 .presentation-image {
-  display: flex;
-  justify-content: center;
   width: 200px;
   height: 266 px;
 }
 
 .prenom-presentation {
   text-align: center;
+}
+
+@media screen and (min-width: 728px) {
+  .fixed-top {
+    position: sticky;
+    top: 0;
+    z-index: 0;
+  }
+
+  .navbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 0.5rem;
+    background-color: black;
+    color: white;
+  }
+
+  .Presentation {
+    flex-wrap: nowrap;
+    flex-direction: row;
+  }
 }
