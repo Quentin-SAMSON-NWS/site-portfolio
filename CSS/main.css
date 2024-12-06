@@ -1,0 +1,73 @@
+header {
+  width: 90%;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  border-style: solid;
+  border-color: black;
+  border-radius: 35px;
+  background-color: gray;
+  padding: 25px;
+  margin: 50px auto;
+  display: flex;
+  align-items: center;
+}
+.image_fleche {
+  height: 50px;
+  width: 50px;
+}
+
+.Prenom {
+  max-width: min-content;
+  padding-left: 1em;
+  color: white;
+  font-family: "Passion One", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.competences {
+  text-align: center;
+}
+.competences-skills {
+  margin-left: 50px;
+  margin-right: 50px;
+  max-width: max-content;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 35px;
+}
+
+.titre-competences-skills {
+  text-align: center;
+  padding: 20px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 35px;
+  margin: 15px;
+}
+
+.liste-centre-dinteret {
+  list-style-type: none;
+}
+
+main {
+  display: flex;
+}
+
+.projet {
+  width: 50%;
+}
+
+.titre-ovale {
+  text-align: center;
+  padding: 20px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 35px;
+  margin: 25px;
+}
+.titre-header {
+  color: white;
+  font-size: 50px;
+}
