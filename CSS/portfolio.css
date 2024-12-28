@@ -3,6 +3,53 @@
   font-weight: 400;
   font-style: normal;
 }
+
+:root {
+  --primary-color: #717171;
+  --secondary-color: #4caf4f;
+  --titre-color: #4d4d4d;
+  --header-color: #f5f7fa;
+  --nav-link-color: #18191f;
+  --sous-titre-color: #717171;
+
+  /* box shadow */
+
+  --shadow-md: 0 2px 4px 0 rgba(171, 190, 209, 0.2);
+
+  /* fonts */
+
+  --font-family-heading: "Inter", sans-serif;
+
+  --font-weight-normal: 400;
+  --font-weight-titre: 600;
+  --font-weight-bold: 700;
+
+  /* font size */
+  --font-size-texte: 14px;
+  --font-size-paragraphe: 16px;
+  --font-size-title-h2: 36px;
+  --font-size-title-h1: 64px;
+
+  /* padding */
+  --padding-top-bottom-nav: 22px;
+  --padding-right-left-nav: 105px;
+  --padding-button-nav-top-bottom: 10px;
+  --padding-button-nav-right-left: 20px;
+
+  --padding-button-left-right: 32px;
+  --padding-button-top-bottom: 14px;
+
+  --padding-icon-left-right: 144px;
+  --padding-icon-boite-top-bottom: 24px;
+  --padding-icon-boite-right-left: 32px;
+
+  --padding-main-footer: 64px;
+  --padding-footer-left-right: 165px;
+
+  /*line height*/
+  --line-height-h2: 44px;
+  --line-height-title: 76px;
+}
 .Presentation {
   display: flex;
   width: 85%;
@@ -184,4 +231,27 @@ body {
     flex-wrap: nowrap;
     flex-direction: row;
   }
+}
+
+.pres-parcours {
+  display: flex;
+  justify-content: space-between;
+  padding-left: var(--padding-icon-left-right);
+  padding-right: var(--padding-icon-left-right);
+  padding-top: 48px;
+  margin-top: 40px;
+  margin-bottom: 48px;
+  align-items: center;
+}
+
+.pres {
+  width: 50%;
+}
+
+.image-main {
+  width: 40%;
+}
+
+.image {
+  max-width: 100%;
 }
