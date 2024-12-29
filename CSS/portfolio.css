@@ -39,7 +39,8 @@
   --padding-button-left-right: 32px;
   --padding-button-top-bottom: 14px;
 
-  --padding-icon-left-right: 144px;
+  --padding-icon-left-right: 56px;
+  --padding-main-top-bottom: 144px;
   --padding-icon-boite-top-bottom: 24px;
   --padding-icon-boite-right-left: 32px;
 
@@ -53,7 +54,7 @@
 .Presentation {
   display: flex;
   width: 85%;
-  background: linear-gradient(#212121, #212121) padding-box,
+  background: linear-gradient(#0f0e0e, #0f0e0e) padding-box,
     linear-gradient(145deg, transparent 35%, #e81cff, #40c9ff) border-box;
   border: 2px solid transparent;
   padding: 1em 1em;
@@ -68,7 +69,50 @@
   flex-direction: column;
 }
 
-.main {
+.main-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: white;
+  padding-top: var(--padding-main-top-bottom);
+  padding-bottom: var(--padding-main-top-bottom);
+}
+
+.main-pres {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  object-fit: contain;
+  width: 400px;
+  height: 400px;
+  border-radius: 75%;
+  overflow: hidden;
+  box-shadow: 0 0 50px #e81cff;
+}
+
+.image-pres {
+  position: relative;
+  top: 35%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  width: 200px;
+  height: 266 px;
+}
+
+.main-pres-texte {
+  width: 45%;
+  padding-right: var(pad);
+}
+
+.passion {
+  color: #e81cff;
+}
+
+.a-propos {
   color: white;
 }
 
@@ -85,6 +129,7 @@
   padding-bottom: 0.5rem;
   background-color: black;
   color: white;
+  z-index: 25;
 }
 
 .navbar-top-right li {
@@ -201,11 +246,6 @@ body {
   width: 75%;
 }
 
-.presentation-image {
-  width: 200px;
-  height: 266 px;
-}
-
 .prenom-presentation {
   text-align: center;
 }
@@ -254,4 +294,12 @@ body {
 
 .image {
   max-width: 100%;
+}
+
+.h2-titre {
+  font-size: var(--font-size-title-h2);
+  line-height: var(--line-height-h2);
+  margin-bottom: 0;
+  text-align: center;
+  color: var(--titre-color);
 }
