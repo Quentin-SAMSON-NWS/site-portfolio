@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="./CSS/portfolio.css" />
     <link rel="stylesheet" href="./CSS/maincv.css" />
     <link rel="stylesheet" href="./CSS/formulaire.css" />
+    <link rel="stylesheet" href="./CSS/carte.css" />
+    <link rel="stylesheet" href="./CSS/competences.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -39,13 +41,13 @@
               <a class="menu" href="#accueil">Accueil</a>
             </li>
             <li>
-              <a class="menu" href="#a-propos">a-propos</a>
+              <a class="menu" href="#a-propos">à-propos</a>
             </li>
             <li>
-              <a class="menu" href="#Competences">Compétences</a>
+              <a class="menu" href="#Competences">Parcours</a>
             </li>
             <li>
-              <a class="menu" href="#Diplome">Diplome</a>
+              <a class="menu" href="#Diplome">Compétences</a>
             </li>
             <li>
               <a class="menu" href="#portfolio">Portfolio</a>
@@ -64,12 +66,23 @@
           <h1 class="prenom-presentation">Quentin Samson</h1>
         </div>
         <div class="main-pres-texte">
-          <h1 class="main-titre-pres">Bienvenue dans mon monde Créatif !</h1>
-          <h2 class="main-titre-h2">
-            Passionée pars <span class="passion"> l'art numérique, </span>
-          </h2>
+          <h1 class="main-titre-pres">
+            Bienvenue dans <span class="passion"> mon monde Créatif ! </span>
+          </h1>
+          <div
+            class="typewriter"
+            data-aos="fade-right"
+            data-aos-duration="1500"
+            data-aos-delay="900"
+          >
+            <h2>
+              Passionée par <span class="typewriter-text"></span
+              ><label for="">|</label>
+            </h2>
+          </div>
+          <script src="JS/script.js"></script>
           <p class="main-paragraphe">
-            j'explore les limites de l'imaginaire à travers des créations
+            J'explore les limites de l'imaginaire à travers des créations
             vibrantes et innovantes. Mon portfolio reflète ma quête d'harmonie
             entre technologie et émotion, transformant chaque idée en une œuvre
             unique. Bonne découverte !
@@ -82,10 +95,10 @@
       <section class="Presentation">
         <div class="presentation-image-prenom">
           <img class="presentation-image" src="" />
-          <h1 class="prenom-presentation">mettre un truc</h1>
+          <h2 id="a-propos">A propos de moi</h2>
+          <h2 class="sous-titre-a-propos">découvrez qui je suis !</h2>
         </div>
         <div class="presentation-text">
-          <h2 id="a-propos">A propos de moi</h2>
           <p>
             Je suis étudiant à la Normandie Web School, une formation dédiée à
             l’univers du digital et de la création numérique. Passionné par la
@@ -117,70 +130,163 @@
           </p>
         </div>
       </section>
-      <div>
-        <section class="parcours-scolaire">
-          <div class="diplome">
-            <h2 class="h2-titre">Mon parcours scolaire</h2>
+    </section>
+    <section class="parcours-scolaire">
+      <div class="diplome">
+        <h2 class="h2-titre">Mon parcours scolaire</h2>
+      </div>
+      <section class="pres-parcours">
+        <div class="image-main">
+          <img src="./image/lycée.jpg" alt="lycée" class="image" />
+        </div>
+        <div class="pres">
+          <h2 class="titre-descr">Lyçée Delamare Debouteville</h2>
+          <p class="description">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto
+            dicta excepturi veniam, quia aliquam reiciendis, ut sunt pariatur
+            ipsum vero soluta quam dolore ratione eligendi ad explicabo labore
+            vitae obcaecati?
+          </p>
+        </div>
+      </section>
+      <section class="pres-parcours">
+        <div class="pres">
+          <h2 class="titre-descr">Licence informatique</h2>
+          <p class="description">
+            Je suis arrivé dans cette licence suite à mon baccalauréat pour
+            poursuivre mon envie de découvrir l'informatique j'ai pu développer
+            des compétneces dans le domaine de la création web et dans la
+            programmation.
+          </p>
+        </div>
+        <div class="image-main">
+          <img src="./image/licence.png" alt="lycée" class="image" />
+        </div>
+      </section>
+      <section class="pres-parcours">
+        <div class="image-main">
+          <img src="./image/NWS.jpg" alt="lycée" class="image" />
+        </div>
+        <div class="pres">
+          <h2 class="titre-descr">Normandie Web School</h2>
+          <p class="description">
+            J'ai décidé de poursuivre mes études au sein de cette école, car je
+            voulais plus de projets concrets et une envie de développer ma
+            créativité. Grâce à cette école, je vais pouvoir faire des projets
+            passionnants tout en améliorant mes compétences dans le domaine du
+            graphisme. À côté des cours, je créais des affiches, flyers, logos,
+            charte graphique pour une équipe E-sport, mais je fais aussi du
+            montage vidéos, car j'adore l'univers de l'audiovisuel, car comme le
+            graphisme, c'est moyen passionnant pour transmettre ses idées,
+            visions des choses et de pouvoirs inspirer le monde qui nous entoure
+            !
+          </p>
+        </div>
+      </section>
+    </section>
+
+    <section class="Competences">
+      <h2 class="h2-titre" id="Competences">Compétences</h2>
+      <div class="toute-les-carte-certif">
+        <div class="carte-certif" tabindex="0">
+          <div class="carte">
+            <div class="carte-certif-face-avant">
+              <h2 class="titre-certif">WEB</h2>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                class="fleche-verso-carte-certification"
+              >
+                <path
+                  fill="currentColor"
+                  d="M3 12q0-3.75 2.625-6.375T12 3V2q0-.3.275-.45t.525.05l3.125 2.35q.4.3.4.8t-.4.8L12.8 7.9q-.25.2-.525.05T12 7.5v-1q-2.275 0-3.888 1.613T6.5 12q0 .825.238 1.588T7.4 15q.275.4.225.863T7.2 16.6l-.85.625q-.45.35-1 .275t-.875-.55q-.725-1.075-1.1-2.325T3 12m9 9v1q0 .3-.275.45t-.525-.05l-3.125-2.35q-.4-.3-.4-.8t.4-.8L11.2 16.1q.25-.2.525-.05t.275.45v1q2.275 0 3.888-1.613T17.5 12q0-.825-.238-1.588T16.6 9q-.275-.4-.225-.862T16.8 7.4l.85-.625q.45-.35 1-.263t.875.538q.7 1.075 1.088 2.325T21 12q0 3.75-2.625 6.375T12 21"
+                />
+              </svg>
+            </div>
+            <div class="carte-certif-face-arriere">
+              <h3 class="titre-objectif-certification">Langages :</h3>
+              <ul>
+                <li>HTML/CSS 70%</li>
+                <li>JavaScript/PHP/MySQL 30%</li>
+              </ul>
+            </div>
           </div>
-        </section>
-        <section class="pres-parcours">
-          <div class="image-main">
-            <img src="./image/lycée.jpg" alt="lycée" class="image" />
+        </div>
+
+        <div class="carte-certif" tabindex="0">
+          <div class="carte">
+            <div class="carte-certif-face-avant">
+              <h2 class="titre-certif">création graphique</h2>
+            </div>
+            <div class="carte-certif-face-arriere">
+              <h3 class="titre-objectif-certification"></h3>
+              <ul>
+                <li>charte graphique</li>
+                <li>affiche/Flyers</li>
+                <li>logos</li>
+              </ul>
+              <a
+                href="https://openclassrooms.com/fr/courses/6691346-concevez-un-contenu-web-accessible"
+                >Consulter la formation</a
+              >
+            </div>
           </div>
-          <div class="pres">
-            <h2 class="titre-descr">Lyçée Delamare Debouteville</h2>
-            <p class="description">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Architecto dicta excepturi veniam, quia aliquam reiciendis, ut
-              sunt pariatur ipsum vero soluta quam dolore ratione eligendi ad
-              explicabo labore vitae obcaecati?
-            </p>
+        </div>
+
+        <div class="carte-certif" tabindex="0">
+          <div class="carte">
+            <div class="carte-certif-face-avant">
+              <h2 class="titre-certif">Montage</h2>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                class="fleche-verso-carte-certification"
+              >
+                <path
+                  fill="currentColor"
+                  d="M3 12q0-3.75 2.625-6.375T12 3V2q0-.3.275-.45t.525.05l3.125 2.35q.4.3.4.8t-.4.8L12.8 7.9q-.25.2-.525.05T12 7.5v-1q-2.275 0-3.888 1.613T6.5 12q0 .825.238 1.588T7.4 15q.275.4.225.863T7.2 16.6l-.85.625q-.45.35-1 .275t-.875-.55q-.725-1.075-1.1-2.325T3 12m9 9v1q0 .3-.275.45t-.525-.05l-3.125-2.35q-.4-.3-.4-.8t.4-.8L11.2 16.1q.25-.2.525-.05t.275.45v1q2.275 0 3.888-1.613T17.5 12q0-.825-.238-1.588T16.6 9q-.275-.4-.225-.862T16.8 7.4l.85-.625q.45-.35 1-.263t.875.538q.7 1.075 1.088 2.325T21 12q0 3.75-2.625 6.375T12 21"
+                />
+              </svg>
+            </div>
+            <div class="carte-certif-face-arriere">
+              <h3 class="titre-objectif-certification">vidéo / photo</h3>
+              <ul>
+                <li>After Effect/ Première pro</li>
+                <li>Miniature</li>
+                <li>retouche photo</li>
+              </ul>
+              <a
+                href="https://openclassrooms.com/fr/courses/7342806-creez-une-maquette-web-avec-figma"
+                >Consulter la formation
+              </a>
+            </div>
           </div>
-        </section>
-        <section class="pres-parcours">
-          <div class="pres">
-            <h2 class="titre-descr">Licence informatique</h2>
-            <p class="description">
-              Je suis arrivé dans cette licence suite à mon baccalauréat pour
-              poursuivre mon envie de découvrir l'informatique j'ai pu
-              développer des compétneces dans le domaine de la création web et
-              dans la programmation.
-            </p>
-          </div>
-          <div class="image-main">
-            <img src="./image/licence.png" alt="lycée" class="image" />
-          </div>
-        </section>
-        <section class="pres-parcours">
-          <div class="image-main">
-            <img src="./image/NWS.jpg" alt="lycée" class="image" />
-          </div>
-          <div class="pres">
-            <h2 class="titre-descr">Normandie Web School</h2>
-            <p class="description">
-              J'ai décidé de poursuivre mes études au sain de cette école car je
-              voulais plus de projet concret et une envie de développer ma
-              créativité. Grâce à cette école je vais pouvoir faire des projets
-              passionant tout en améliorant mes compétences dans le domaine du
-              graphisme. A côté des cours je créer des affiches, flyers, logos,
-              charte graphique pour une équipe E-sport mais je fais aussi du
-              montage vidéos car j'adore l'univers de l'audiovisuel car comme le
-              graphisme c'est moyen passionant pour transmettre ses idées,
-              visions des choses et de pouvoirs inspirer le monde qui nous
-              entoure !
-            </p>
-          </div>
-        </section>
-        <section class="Competences">
-          <h2 class="h2-titre" id="Competences">Compétences</h2>
-          <!-- réfléchir pour la disposition des compétences -->
-        </section>
+        </div>
       </div>
     </section>
     <section id="Portfolio">
       <h2 class="h2-titre" id="Portfolio">Portfolio</h2>
-      <h3 id="Projet">Projet</h3>
     </section>
+    <section class="pres-portfolio">
+      <div class="image-main">
+        <img src="./image/NWS.jpg" alt="lycée" class="image" />
+      </div>
+      <div class="pres">
+        <h2 class="titre-descr">Normandie Web School</h2>
+        <p class="description">
+          J'ai décidé de poursuivre mes études au sain de cette école car je
+          voulais plus de projet concret et une envie de développer ma
+          créativité. Grâce à cette école je vais pouvoir faire des projets
+          passionant tout en améliorant mes compétences dans le domaine du
+          graphisme. A côté des cours je créer des affiches, flyers, logos,
+          charte graphique pour une équipe E-sport mais je fais aussi du montage
+          vidéos car j'adore l'univers de l'audiovisuel car comme le graphisme
+          c'est moyen passionant pour transmettre ses idées, visions des choses
+          et de pouvoirs inspirer le monde qui nous entoure !
+        </p>
+      </div>
+    </section>
+    <h3 class="h3-titre" id="Projet">Projet</h3>
     <section class="contacter-moi">
       <h1 class="contacter">Contacter moi</h1>
     </section>
