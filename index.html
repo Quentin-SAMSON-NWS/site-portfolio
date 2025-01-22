@@ -10,11 +10,11 @@
     <meta name="author" content="" />
 
     <link rel="icone" href="" />
-    <link rel="stylesheet" href="./CSS/portfolio.css" />
-    <link rel="stylesheet" href="./CSS/maincv.css" />
-    <link rel="stylesheet" href="./CSS/formulaire.css" />
-    <link rel="stylesheet" href="./CSS/carte.css" />
-    <link rel="stylesheet" href="./CSS/competences.css" />
+    <link rel="stylesheet" href="CSS/main.css" />
+    <link rel="stylesheet" href="CSS/maincv.css" />
+    <link rel="stylesheet" href="CSS/formulaire.css" />
+    <link rel="stylesheet" href="CSS/carte.css" />
+    <link rel="stylesheet" href="CSS/competences.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -25,432 +25,220 @@
   </head>
 
   <body>
-    <!-- HEAD lien essayer de faire un site horizontale -->
-    <header class="fixed-top navbar navbar-top-right">
-      <section>
-        <div>
-          <a class="logo" href="#accueil">
-            <img class="image-header" src="./image/icone de site.svg"
-          /></a>
-        </div>
-      </section>
-      <section>
-        <nav>
-          <ul class="nav-list">
-            <li>
-              <a class="menu" href="#accueil">Accueil</a>
-            </li>
-            <li>
-              <a class="menu" href="#a-propos">à-propos</a>
-            </li>
-            <li>
-              <a class="menu" href="#Competences">Parcours</a>
-            </li>
-            <li>
-              <a class="menu" href="#Diplome">Compétences</a>
-            </li>
-            <li>
-              <a class="menu" href="#portfolio">Portfolio</a>
-            </li>
-            <li class="right">
-              <a class="menu" href="#Contacter">Me contacter</a>
-            </li>
-          </ul>
-        </nav>
-      </section>
+    <header class="navbar">
+      <div>
+        <a class="logo" href="#accueil">
+          <img class="image-header" src="./image/icone de site.svg"
+        /></a>
+      </div>
+      <nav>
+        <a class="menu" href="index.html">Accueil</a>
+        <a class="menu" href="competences.html">Compétences</a>
+        <a class="menu" href="Portfolio.html">Portfolio</a>
+        <a class="menu" href="Contacter.html">Me contacter</a>
+      </nav>
     </header>
-    <section>
-      <div class="main-container">
-        <div class="main-pres">
-          <img class="image-pres" src="./image/QUENTIN.jfif" />
-          <h1 class="prenom-presentation">Quentin Samson</h1>
-        </div>
-        <div class="main-pres-texte">
-          <h1 class="main-titre-pres">
-            Bienvenue dans <span class="passion"> mon monde Créatif ! </span>
-          </h1>
-          <div
-            class="typewriter"
-            data-aos="fade-right"
-            data-aos-duration="1500"
-            data-aos-delay="900"
-          >
-            <h2>
-              Passionée par <span class="typewriter-text"></span
-              ><label for="">|</label>
-            </h2>
+    <main>
+      <section>
+        <div class="main-container">
+          <div class="main-pres">
+            <img class="image-pres" src="./image/QUENTIN-Photoroom.png" />
+            <h1 class="prenom-presentation">Quentin Samson</h1>
           </div>
-          <script src="JS/script.js"></script>
-          <p class="main-paragraphe">
-            J'explore les limites de l'imaginaire à travers des créations
-            vibrantes et innovantes. Mon portfolio reflète ma quête d'harmonie
-            entre technologie et émotion, transformant chaque idée en une œuvre
-            unique. Bonne découverte !
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section class="a-propos">
-      <section class="Presentation">
-        <div class="presentation-image-prenom">
-          <img class="presentation-image" src="" />
-          <h2 id="a-propos">A propos de moi</h2>
-          <h2 class="sous-titre-a-propos">découvrez qui je suis !</h2>
-        </div>
-        <div class="presentation-text">
-          <p>
-            Je suis étudiant à la Normandie Web School, une formation dédiée à
-            l’univers du digital et de la création numérique. Passionné par la
-            technologie, je souhaite donner vie à mes idées grâce aux Logiciels
-            informatique.
-          </p>
-          <p>
-            Avant d’intégrer cette école, j’ai suivi deux années de licence
-            informatique à Saint-Étienne-du-Rouvray. Ce parcours m’a permis de
-            développer une bases dans la programmation, me fournissant une
-            compréhension technique qui complète parfaitement mon orientation
-            actuelle vers le graphisme et le design numérique.
-          </p>
-          Aujourd’hui, je cherche à enrichir mes compétences dans le domaine du
-          graphisme pour créer des projets uniques et impactants. Que ce soit
-          par la conception de visuels captivants, d’interfaces utilisateur
-          intuitives, ou encore d’animations engageantes, mon objectif est
-          d’allier esthétique et fonction pour répondre aux besoins des
-          utilisateurs ou d'inspirer les autres.
-          <p>
-            Je suis convaincu que le monde numérique est un espace sans limites
-            pour l’innovation et la créativité. En travaillant sur divers
-            projets, je m’efforce de repousser mes propres limites et d’explorer
-            de nouveaux horizons dans le design.
-          </p>
-          <p>
-            Si vous partagez cette vision ou êtes intéressé par une
-            collaboration, je serais ravi d’échanger avec vous !
-          </p>
-        </div>
-      </section>
-    </section>
-    <section class="parcours-scolaire">
-      <div class="diplome">
-        <h2 class="h2-titre">Mon parcours scolaire</h2>
-      </div>
-      <section class="pres-parcours">
-        <div class="image-main">
-          <img src="./image/lycée.jpg" alt="lycée" class="image" />
-        </div>
-        <div class="pres">
-          <h2 class="titre-descr">Lyçée Delamare Debouteville</h2>
-          <p class="description">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto
-            dicta excepturi veniam, quia aliquam reiciendis, ut sunt pariatur
-            ipsum vero soluta quam dolore ratione eligendi ad explicabo labore
-            vitae obcaecati?
-          </p>
-        </div>
-      </section>
-      <section class="pres-parcours">
-        <div class="pres">
-          <h2 class="titre-descr">Licence informatique</h2>
-          <p class="description">
-            Je suis arrivé dans cette licence suite à mon baccalauréat pour
-            poursuivre mon envie de découvrir l'informatique j'ai pu développer
-            des compétneces dans le domaine de la création web et dans la
-            programmation.
-          </p>
-        </div>
-        <div class="image-main">
-          <img src="./image/licence.png" alt="lycée" class="image" />
-        </div>
-      </section>
-      <section class="pres-parcours">
-        <div class="image-main">
-          <img src="./image/NWS.jpg" alt="lycée" class="image" />
-        </div>
-        <div class="pres">
-          <h2 class="titre-descr">Normandie Web School</h2>
-          <p class="description">
-            J'ai décidé de poursuivre mes études au sein de cette école, car je
-            voulais plus de projets concrets et une envie de développer ma
-            créativité. Grâce à cette école, je vais pouvoir faire des projets
-            passionnants tout en améliorant mes compétences dans le domaine du
-            graphisme. À côté des cours, je créais des affiches, flyers, logos,
-            charte graphique pour une équipe E-sport, mais je fais aussi du
-            montage vidéos, car j'adore l'univers de l'audiovisuel, car comme le
-            graphisme, c'est moyen passionnant pour transmettre ses idées,
-            visions des choses et de pouvoirs inspirer le monde qui nous entoure
-            !
-          </p>
-        </div>
-      </section>
-    </section>
-
-    <section class="Competences">
-      <h2 class="h2-titre" id="Competences">Compétences</h2>
-      <div class="toute-les-carte-certif">
-        <div class="carte-certif" tabindex="0">
-          <div class="carte">
-            <div class="carte-certif-face-avant">
-              <h2 class="titre-certif">WEB</h2>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                class="fleche-verso-carte-certification"
-              >
-                <path
-                  fill="currentColor"
-                  d="M3 12q0-3.75 2.625-6.375T12 3V2q0-.3.275-.45t.525.05l3.125 2.35q.4.3.4.8t-.4.8L12.8 7.9q-.25.2-.525.05T12 7.5v-1q-2.275 0-3.888 1.613T6.5 12q0 .825.238 1.588T7.4 15q.275.4.225.863T7.2 16.6l-.85.625q-.45.35-1 .275t-.875-.55q-.725-1.075-1.1-2.325T3 12m9 9v1q0 .3-.275.45t-.525-.05l-3.125-2.35q-.4-.3-.4-.8t.4-.8L11.2 16.1q.25-.2.525-.05t.275.45v1q2.275 0 3.888-1.613T17.5 12q0-.825-.238-1.588T16.6 9q-.275-.4-.225-.862T16.8 7.4l.85-.625q.45-.35 1-.263t.875.538q.7 1.075 1.088 2.325T21 12q0 3.75-2.625 6.375T12 21"
-                />
-              </svg>
+          <div class="main-pres-texte">
+            <h1 class="main-titre-pres">
+              Bienvenue dans <span class="passion"> mon monde Créatif ! </span>
+            </h1>
+            <div
+              class="typewriter"
+              data-aos="fade-right"
+              data-aos-duration="1500"
+              data-aos-delay="900"
+            >
+              <h2>
+                Passionée par <span class="typewriter-text"></span
+                ><label for="">|</label>
+              </h2>
             </div>
-            <div class="carte-certif-face-arriere">
-              <h3 class="titre-objectif-certification">Langages :</h3>
-              <ul>
-                <li>HTML/CSS 70%</li>
-                <li>JavaScript/PHP/MySQL 30%</li>
-              </ul>
-            </div>
+            <script src="JS/script.js"></script>
+            <p class="main-paragraphe">
+              J'explore les limites de l'imaginaire à travers des créations
+              vibrantes et innovantes. Mon portfolio reflète ma quête d'harmonie
+              entre technologie et émotion, transformant chaque idée en une
+              œuvre unique. Bonne découverte !
+            </p>
           </div>
         </div>
+      </section>
 
-        <div class="carte-certif" tabindex="0">
-          <div class="carte">
-            <div class="carte-certif-face-avant">
-              <h2 class="titre-certif">création graphique</h2>
-            </div>
-            <div class="carte-certif-face-arriere">
-              <h3 class="titre-objectif-certification"></h3>
-              <ul>
-                <li>charte graphique</li>
-                <li>affiche/Flyers</li>
-                <li>logos</li>
-              </ul>
-              <a
-                href="https://openclassrooms.com/fr/courses/6691346-concevez-un-contenu-web-accessible"
-                >Consulter la formation</a
-              >
-            </div>
+      <section class="a-propos">
+        <section class="Presentation">
+          <div class="presentation-image-prenom">
+            <img class="presentation-image" src="" />
+            <h2 id="a-propos">A propos de moi</h2>
+            <h2 class="sous-titre-a-propos">découvrez qui je suis !</h2>
           </div>
-        </div>
-
-        <div class="carte-certif" tabindex="0">
-          <div class="carte">
-            <div class="carte-certif-face-avant">
-              <h2 class="titre-certif">Montage</h2>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                class="fleche-verso-carte-certification"
-              >
-                <path
-                  fill="currentColor"
-                  d="M3 12q0-3.75 2.625-6.375T12 3V2q0-.3.275-.45t.525.05l3.125 2.35q.4.3.4.8t-.4.8L12.8 7.9q-.25.2-.525.05T12 7.5v-1q-2.275 0-3.888 1.613T6.5 12q0 .825.238 1.588T7.4 15q.275.4.225.863T7.2 16.6l-.85.625q-.45.35-1 .275t-.875-.55q-.725-1.075-1.1-2.325T3 12m9 9v1q0 .3-.275.45t-.525-.05l-3.125-2.35q-.4-.3-.4-.8t.4-.8L11.2 16.1q.25-.2.525-.05t.275.45v1q2.275 0 3.888-1.613T17.5 12q0-.825-.238-1.588T16.6 9q-.275-.4-.225-.862T16.8 7.4l.85-.625q.45-.35 1-.263t.875.538q.7 1.075 1.088 2.325T21 12q0 3.75-2.625 6.375T12 21"
-                />
-              </svg>
-            </div>
-            <div class="carte-certif-face-arriere">
-              <h3 class="titre-objectif-certification">vidéo / photo</h3>
-              <ul>
-                <li>After Effect/ Première pro</li>
-                <li>Miniature</li>
-                <li>retouche photo</li>
-              </ul>
-              <a
-                href="https://openclassrooms.com/fr/courses/7342806-creez-une-maquette-web-avec-figma"
-                >Consulter la formation
-              </a>
-            </div>
+          <div class="presentation-text">
+            <p>
+              Actuellement étudiant à la Normandie Web School, je me forme dans
+              le domaine du digital et de la création numérique. Passionné par
+              la technologie depuis toujours, j’ai à cœur de transformer mes
+              idées en projets concrets grâce aux logiciels informatiques et aux
+              outils numériques. Mon objectif est de créer des expériences et
+              des solutions qui se démarquent par leur esthétique, leur impact
+              et leur capacité à répondre aux besoins des utilisateurs.
+            </p>
+            <p>
+              Avant d’intégrer cette école, j’ai suivi deux années de licence
+              informatique à Saint-Étienne-du-Rouvray. Ce parcours académique
+              m’a permis de développer des bases solides en programmation, ainsi
+              qu’une compréhension approfondie des concepts techniques liés au
+              développement logiciel. Ces compétences techniques me servent
+              aujourd’hui de socle pour aborder le graphisme et le design
+              numérique de manière innovante et méthodique. Cette double
+              compétence, à la fois créative et technique, me permet de
+              concevoir des projets alliant rigueur et originalité.
+            </p>
+            <p>
+              Mon intérêt pour le graphisme m’a conduit à explorer plusieurs
+              aspects de ce domaine, notamment la création de visuels
+              captivants, la conception d’interfaces utilisateur intuitives et
+              le développement d’animations engageantes. Je considère chaque
+              projet comme une opportunité de repousser mes limites, d’explorer
+              de nouvelles idées et de perfectionner mes compétences. Mon
+              ambition est d’allier esthétique et fonctionnalité pour concevoir
+              des solutions qui inspirent et captivent.
+            </p>
+            <p>
+              Le monde numérique est, selon moi, un espace d’innovation
+              illimité. Il offre une plateforme où créativité et technologie se
+              rejoignent pour donner vie à des concepts uniques. Je suis motivé
+              par l’idée de repousser les frontières du possible dans mes
+              projets, qu’il s’agisse de collaborations avec d’autres créateurs
+              ou de travaux personnels.
+            </p>
+            <p>
+              En parallèle de mes études, je cherche à m’investir dans des
+              projets concrets et collaboratifs qui me permettent d’échanger
+              avec d’autres passionnés. Travailler en équipe est pour moi une
+              occasion précieuse d’apprendre, de partager des idées et de créer
+              des solutions qui se distinguent par leur pertinence et leur
+              impact.
+            </p>
+            <p>
+              Si vous partagez cette vision ou souhaitez collaborer sur des
+              projets dans l’univers du digital, je serais ravi d’échanger avec
+              vous. Ensemble, nous pourrions concevoir des créations innovantes
+              et marquantes, capables d’inspirer et de répondre aux enjeux
+              actuels.
+            </p>
           </div>
+        </section>
+      </section>
+      <section class="parcours-scolaire">
+        <div class="diplome">
+          <h2 class="h2-titre">Mon parcours scolaire</h2>
         </div>
-      </div>
-    </section>
-    <section id="Portfolio">
-      <h2 class="h2-titre" id="Portfolio">Portfolio</h2>
-    </section>
-    <section class="pres-portfolio">
-      <div class="image-main">
-        <img src="./image/NWS.jpg" alt="lycée" class="image" />
-      </div>
-      <div class="pres">
-        <h2 class="titre-descr">Normandie Web School</h2>
-        <p class="description">
-          J'ai décidé de poursuivre mes études au sain de cette école car je
-          voulais plus de projet concret et une envie de développer ma
-          créativité. Grâce à cette école je vais pouvoir faire des projets
-          passionant tout en améliorant mes compétences dans le domaine du
-          graphisme. A côté des cours je créer des affiches, flyers, logos,
-          charte graphique pour une équipe E-sport mais je fais aussi du montage
-          vidéos car j'adore l'univers de l'audiovisuel car comme le graphisme
-          c'est moyen passionant pour transmettre ses idées, visions des choses
-          et de pouvoirs inspirer le monde qui nous entoure !
-        </p>
-      </div>
-    </section>
-    <h3 class="h3-titre" id="Projet">Projet</h3>
-    <section class="contacter-moi">
-      <h1 class="contacter">Contacter moi</h1>
-    </section>
-    <section class="cv">
-      <section class="header">
+        <section class="pres-parcours">
+          <div class="image-main">
+            <img src="./image/lycée.jpg" alt="lycée" class="image" />
+          </div>
+          <div class="pres">
+            <h2 class="titre-descr">Lyçée Delamare Debouteville</h2>
+            <p class="description">
+              J’ai obtenu mon baccalauréat au lycée Delamare Deboutteville, avec
+              pour spécialités Mathématiques et NSI (Numérique et Sciences de
+              l’Informatique). C’est au sein de cet établissement que j’ai
+              découvert ma passion pour l’informatique. Cette première immersion
+              dans cet univers fascinant m’a donné envie d’approfondir mes
+              connaissances et de développer mes compétences dans ce domaine.
+              Mon parcours a commencé par l’exploration des composants d’un
+              ordinateur, ce qui m’a permis de comprendre son fonctionnement en
+              profondeur. Par la suite, je me suis orienté vers la programmation
+              et le développement, en apprenant à créer des solutions numériques
+              et à m’initier aux bases du codage. Cette expérience a été
+              déterminante pour façonner mon intérêt pour l’informatique et m’a
+              motivé à poursuivre cette voie avec enthousiasme et détermination.
+              web.
+            </p>
+          </div>
+        </section>
+        <section class="pres-parcours">
+          <div class="pres">
+            <h2 class="titre-descr">Licence informatique</h2>
+            <p class="description">
+              Après l’obtention de mon baccalauréat, j’ai choisi d’intégrer
+              cette licence afin de poursuivre ma passion pour l’informatique et
+              approfondir mes connaissances dans ce domaine fascinant. Cette
+              formation m’a offert l’opportunité de développer des compétences
+              solides, notamment dans le domaine de la création web, où j’ai
+              appris à concevoir et réaliser des sites et des interfaces
+              attractives et fonctionnelles. Par ailleurs, j’ai également pu me
+              perfectionner dans la programmation, en explorant divers langages
+              et en apprenant à résoudre des problématiques complexes par le
+              biais de solutions informatiques adaptées. Cette expérience m’a
+              permis d’allier théorie et pratique, tout en renforçant mon
+              intérêt pour les technologies numériques et leur rôle central dans
+              le monde moderne. Grâce à cette licence, j’ai non seulement acquis
+              des bases techniques essentielles, mais j’ai également renforcé
+              mon envie de continuer à évoluer dans un univers où innovation et
+              créativité se rencontrent.
+            </p>
+          </div>
+          <div class="image-main">
+            <img src="./image/licence.png" alt="lycée" class="image" />
+          </div>
+        </section>
+        <section class="pres-parcours">
+          <div class="image-main">
+            <img src="./image/NWS.jpg" alt="lycée" class="image" />
+          </div>
+          <div class="pres">
+            <h2 class="titre-descr">Normandie Web School</h2>
+            <p class="description">
+              J'ai décidé de poursuivre mes études au sein de cette école, car
+              je voulais plus de projets concrets et une envie de développer ma
+              créativité. Grâce à cette école, je vais pouvoir faire des projets
+              passionnants tout en améliorant mes compétences dans le domaine du
+              graphisme. À côté des cours, je créais des affiches, flyers,
+              logos, charte graphique pour une équipe E-sport, mais je fais
+              aussi du montage vidéos, car j'adore l'univers de l'audiovisuel,
+              car comme le graphisme, c'est moyen passionnant pour transmettre
+              ses idées, visions des choses et de pouvoirs inspirer le monde qui
+              nous entoure !
+            </p>
+          </div>
+        </section>
+      </section>
+    </main>
+    <footer>
+      <section class="footer">
         <div>
-          <h1 class="Prenom">Quentin SAMSON</h1>
-
-          <ul class="information-perso">
-            <li>numéro de tél: 06 06 06 06 06</li>
-            <li>linkedin: Quentin SAMSON</li>
-            <li>adresse mail: qsamson@normadiewebschool.fr</li>
-          </ul>
+          <p>Quentin SAMSON</p>
+          <p>Graphiste - Monteurs Vidéos</p>
+          <p>
+            Me contacter :
+            <a href="samson.quentin13@gmail.com">samson.quentin13@gmail.com</a>
+          </p>
         </div>
-        <div class="titre-header">
-          je recherche une alternance/stage en communication graphique ou
-          digitale.
+        <div class="reseaux">
+          <a
+            href="https://www.linkedin.com/in/quentin-samson-08492a335/"
+            target="_blank"
+            >LinkedIn</a
+          >
+          <a href="https://github.com/Quentin-SAMSON-NWS" target="_blank"
+            >GitHub</a
+          >
+          <a href="https://dribbble.com/johndoe" target="_blank">Dribbble</a>
         </div>
-        <div class="portfolio">
-          Mon portfolio
-          <img
-            class="image_fleche"
-            src="./image/fleche-dessinee-a-droite.png"
-          />
+        <div class="mentions_legales">
+          <p>
+            <a href="/mentions-legales">Mentions légales</a>
+          </p>
+          <p>&copy; Quentin SAMSON - Tous droits réservés - 2025</p>
         </div>
       </section>
-      <div class="main-css">
-        <section class="competences-skills">
-          <h2 class="titre-competences-skills">compétences</h2>
-          <table class="competences">
-            <thead>
-              <tr>
-                <th class="sous-titre-competences" colspan="2">
-                  Logiciels/lagage
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>illustrator<img src="" alr="illu" /></td>
-                <td>wordpress</td>
-              </tr>
-              <tr>
-                <td>lightroom<img src="" alr="illu" /></td>
-                <td>HTML/CSS</td>
-              </tr>
-              <tr>
-                <td>photoshop<img src="" alr="illu" /></td>
-                <td>Javascript</td>
-              </tr>
-              <tr>
-                <td>InDesign<img src="" alr="illu" /></td>
-                <td>PHP</td>
-              </tr>
-              <tr>
-                <td>after Effect<img src="" alr="illu" /></td>
-                <td>MYsql</td>
-              </tr>
-              <tr>
-                <td>Première pro<img src="" alr="illu" /></td>
-              </tr>
-            </tbody>
-          </table>
-          <table>
-            <thead>
-              <tr>
-                <th colspan="2">Missions</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>montage vidéo<img src="" alr="illu" /></td>
-                <td>miniature vidéo</td>
-              </tr>
-              <tr>
-                <td>retouche photo<img src="" alr="illu" /></td>
-                <td>marketing</td>
-              </tr>
-              <tr>
-                <td>affiche/flyers<img src="" alr="illu" /></td>
-                <td>E-Commerce</td>
-              </tr>
-              <tr>
-                <td>Création de site Web<img src="" alr="illu" /></td>
-                <td>PHP</td>
-              </tr>
-            </tbody>
-          </table>
-          <h2 class="titre-competences-skills">Soft Skills</h2>
-          <ol>
-            <li>Esprit d'équipe</li>
-            <li>Créatif</li>
-            <li>Capacité d'adaptation</li>
-            <li>Plannification et organisation</li>
-            <li>anticipation des obstacles</li>
-          </ol>
-          <h2 class="titre-competences-skills">Centres d'intéret</h2>
-          <ul class="liste-centre-dinteret">
-            <li>jeux vidéo</li>
-            <li>création numérique</li>
-            <li>Musculation</li>
-            <li>Cuisine</li>
-            <li>Voyage</li>
-          </ul>
-        </section>
-        <section class="projet">
-          <h2 class="titre-ovale">Projet profesionalisant</h2>
-          <p>Alimentation de réseaux sociaux</p>
-          <ul>
-            <li>montage vidéo/miniature</li>
-            <li>
-              affiche événementielle, logo, charte graphique pour team e-sport
-            </li>
-            <li>
-              Création de site web avec wordpress ou langage de programmation
-            </li>
-          </ul>
-          <h2 class="titre-ovale">Formation</h2>
-          <h3>Normandie Web School (2024-2027)</h3>
-          <ul>
-            <li>montage vidéo/miniature</li>
-            <li>
-              afficheévénementielle, logo, charte graphique pour team e-sport
-            </li>
-            <li>
-              Création de site web avec wordpress ou langage de programmation
-            </li>
-          </ul>
-          <div>
-            <h3>Licence Informatique (2022-20224)</h3>
-            <ul>
-              <li>Saint Étienne du Rouvray</li>
-              <li>l’UFR Sciences et Techniques</li>
-              <li>Rouen</li>
-            </ul>
-            <div>
-              <h3>Baccalauréat (2021-2022)</h3>
-            </div>
-            <div>
-              Baccalauréat spécialités Maths et Numérique et sciences de
-              l’informatique
-            </div>
-            <div>Lycée Delamare Deboutteville</div>
-          </div>
-        </section>
-      </div>
-    </section>
-    <div class="form-container">
-      <form class="form">
-        <div class="form-group">
-          <label for="Nom et Prénom">Nom et Prénom</label>
-          <input type="text" id="Nom-Prenom" name="Nom-Prenom" required />
-        </div>
-        <div class="form-group">
-          <label for="email">E-mail</label>
-          <input type="email" id="email" name="email" required />
-        </div>
-        <div class="form-group">
-          <label for="textarea">écrivez votre message</label>
-          <textarea name="textarea" id="textarea" rows="10" cols="50" required>
-          </textarea>
-        </div>
-        <button class="form-submit-btn" type="submit">Submit</button>
-      </form>
-    </div>
+    </footer>
   </body>
 </html>
