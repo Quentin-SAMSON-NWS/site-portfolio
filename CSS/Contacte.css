@@ -1,8 +1,11 @@
-.Contacte {
+.container_contact {
   background: #0f0e0e;
   border-radius: 15px;
   width: 85%;
   margin: auto;
+}
+
+.Contacte {
   color: white;
   padding: 3em;
   margin-bottom: 3em;
@@ -24,6 +27,7 @@
   color: white;
   border-style: solid;
   border-color: white;
+  margin-top: 2em;
 }
 
 .cv_installer:hover {
