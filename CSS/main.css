@@ -315,14 +315,34 @@ main {
 
 .pres {
   width: 50%;
+  margin: 0.5em;
 }
 
 .image-main {
   width: 40%;
+  margin: 0.5em;
+  display: flex;
+  justify-content: center;
 }
 
 .image {
-  width: 450px;
+  width: 350px;
+}
+
+.titre-main {
+  width: 85%;
+  margin: auto;
+  font-size: var(--font-size-title-h2-main);
+  line-height: var(--line-height-h2);
+  text-align: center;
+  color: var(--header-color);
+  border-color: var(--header-color);
+  border-bottom: solid;
+  padding-bottom: 0.5em;
+  padding-top: 0.5em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  color: white;
 }
 
 .h2-titre {
