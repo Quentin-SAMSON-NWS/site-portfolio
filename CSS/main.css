@@ -126,7 +126,7 @@
   transform: rotate(-2deg) scale(0.95);
 }
 
-.Presentation {
+.presentation {
   display: flex;
   width: 85%;
   background: linear-gradient(#0f0e0e, #0f0e0e) padding-box,
@@ -141,7 +141,7 @@
   border-radius: 26px;
   margin: auto;
   margin-top: 5em;
-  flex-direction: column;
+  flex-direction: row;
   margin-bottom: 8em;
 }
 
@@ -160,13 +160,11 @@
   padding-bottom: 0.8em;
 }
 
-.descritpion {
-  box-shadow: 0px 0px 10px 5px #00000088;
+.descriptions {
   width: 100%;
   padding: 10px;
-  background-color: #00000099;
-  backdrop-filter: blur(5px);
   border-radius: 5px;
+  font-size: 1rem;
 }
 
 .main-container {
@@ -274,30 +272,11 @@ main {
 
 .presentation-text {
   width: 75%;
-  font-size: var(--font-size-paragraphe);
+  font-size: 1rem;
 }
 
 .prenom-presentation {
   text-align: center;
-}
-
-@media screen and (min-width: 728px) {
-  .navbar {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    padding-bottom: 0.5rem;
-    background-color: black;
-    color: white;
-    position: sticky;
-    top: 0;
-  }
-
-  .Presentation {
-    flex-wrap: nowrap;
-    flex-direction: row;
-  }
 }
 
 .pres-parcours {
@@ -432,4 +411,42 @@ main {
   margin-top: 40px;
   margin-bottom: 48px;
   color: white;
+}
+
+@media screen and (max-width: 728px) {
+  .navbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 0.5rem;
+    background-color: black;
+    color: white;
+    position: sticky;
+    top: 0;
+  }
+  .main-container {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .main-pres-texte {
+    width: 75%;
+  }
+  .presentation {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .presentation-image-prenom {
+    width: 75%;
+  }
+  .pres-parcours {
+    flex-direction: column;
+  }
+  .pres {
+    width: 75%;
+  }
 }
