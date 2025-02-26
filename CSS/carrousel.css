@@ -1,0 +1,154 @@
+.carrousel-container {
+  display: flex;
+  justify-content: space-evenly;
+  width: 85%;
+  border-radius: 26px;
+  margin: auto;
+  background-color: #131010;
+  padding-left: var(--padding-icon-left-right);
+  padding-right: var(--padding-icon-left-right);
+  padding-top: 48px;
+  padding-bottom: 48px;
+  margin-top: 40px;
+  margin-bottom: 48px;
+  align-items: center;
+  color: white;
+}
+
+.carrousel-descr {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 14px;
+  width: 40%;
+}
+
+.carrousel-image {
+  position: relative; /* Ajouté pour aligner les boutons */
+  height: 100vh;
+  width: 50vw;
+  overflow: hidden; /* Évite le débordement */
+}
+
+.carrousel-image ul {
+  margin: 0;
+  padding: 0;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out; /* Ajoute une animation fluide */
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+.slide img {
+  display: block;
+  width: 100%; /* S'assurer que l'image prend bien toute la largeur */
+  height: 100%; /* Pour éviter les décalages */
+  object-fit: cover; /* Ajuste l'image pour qu'elle remplisse l'espace */
+}
+
+.carrousel button {
+  position: absolute; /* Ajout d'un fond semi-transparent */
+  border: none;
+  outline: none;
+  font-size: 2.6rem;
+  z-index: 2;
+  cursor: pointer;
+  color: aliceblue;
+  transform: translateY(-50%);
+  top: 50%;
+  padding: 10px;
+  background: none;
+}
+
+#prev {
+  left: 10px;
+}
+
+#next {
+  right: 10px;
+}
+
+.carrousel li {
+  list-style: none;
+}
+
+.slide {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+.slide img {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+  .carrousel-container {
+    flex-direction: column;
+    width: 90%;
+    padding: 24px;
+  }
+
+  .carrousel-descr {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .carrousel-image {
+    width: 100%;
+    height: 50vh;
+  }
+
+  .carrousel button {
+    font-size: 2rem;
+    padding: 8px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .carrousel-container {
+    padding: 16px;
+  }
+
+  .carrousel-image {
+    height: 45vh;
+  }
+
+  .carrousel button {
+    font-size: 1.8rem;
+    padding: 6px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .carrousel-container {
+    width: 95%;
+  }
+
+  .carrousel-image {
+    height: 40vh;
+  }
+
+  .carrousel button {
+    font-size: 1.5rem;
+    padding: 5px;
+  }
+}

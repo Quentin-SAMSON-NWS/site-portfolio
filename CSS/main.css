@@ -361,6 +361,7 @@ main {
   margin-bottom: 48px;
   align-items: center;
   color: white;
+  flex-direction: row;
 }
 
 .footer {
