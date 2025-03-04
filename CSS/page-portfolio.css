@@ -1,0 +1,45 @@
+.main-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 75%;
+  background-color: #18191f;
+  border-radius: 25px;
+  padding: 2rem;
+  margin: auto;
+}
+
+.image-main {
+  width: 350px;
+}
+
+.main-countainer-image {
+  width: 250px;
+}
+
+.secound-countainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 75%;
+  border-radius: 25px;
+  padding: 2rem;
+  margin: 1rem;
+}
+
+.secound-countainer-image {
+  background-color: #18191f;
+  border-radius: 25px;
+  padding: 2rem;
+}
+
+.secound-container-texte {
+  background-color: #18191f;
+  border-radius: 25px;
+  padding: 2rem;
+  color: aliceblue;
+}

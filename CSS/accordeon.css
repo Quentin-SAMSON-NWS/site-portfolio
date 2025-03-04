@@ -26,10 +26,14 @@
 
 .accordion-content {
   padding: 0 18px;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
+  width: 90%;
+  margin: auto;
+  background-color: #cbcbcb;
+  color: #444;
 }
 
 @media (max-width: 767px) {
