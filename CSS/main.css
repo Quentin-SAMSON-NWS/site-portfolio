@@ -201,7 +201,7 @@
   position: relative;
   top: 35%;
   left: 25%;
-  transform: translate(-32%, -12%);
+  transform: translate(-32%, -20%);
   z-index: auto;
   width: 300px;
   height: 266 px;
@@ -282,7 +282,7 @@ main {
 }
 
 .prenom-presentation {
-  text-align: center;
+  font-size: var(--font-size-title-h1);
 }
 
 .pres-parcours {
@@ -339,7 +339,7 @@ main {
 }
 
 .image {
-  width: 350px;
+  width: 100%;
 }
 
 .titre-main {
@@ -449,7 +449,20 @@ main {
 }
 @media screen and (max-width: 850px) {
   .pres-portfolio {
-    flex-direction: column;
+    display: flex; /* S'assure que flex est actif */
+    align-items: center; /* Centre les éléments */ /* Prend toute la largeur */
+    padding: 20px; /* Ajuste l'espacement */
+  }
+
+  .pres-portfolio .image-main,
+  .pres-portfolio .pres {
+    width: 100%; /* Force les éléments à prendre toute la largeur */
+    text-align: center; /* Centre le texte */
+  }
+
+  .pres-portfolio img {
+    max-width: 80%; /* Empêche l'image d'être trop grande */
+    height: auto;
   }
 }
 
@@ -497,5 +510,8 @@ main {
   }
   .pres {
     width: 75%;
+  }
+  .pres-portfolio {
+    flex-direction: column;
   }
 }
