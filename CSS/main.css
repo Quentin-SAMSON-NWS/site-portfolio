@@ -379,7 +379,19 @@ main {
   text-align: center;
   color: var(--titre-color);
 }
-
+.h2-titre-portfolio {
+  width: 85%;
+  margin: auto;
+  line-height: var(--line-height-h2);
+  text-align: center;
+  color: var(--header-color);
+  border-color: var(--header-color);
+  padding-bottom: 0.5em;
+  padding-top: 0.5em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  font-size: 35px;
+}
 .pres-portfolio {
   display: flex;
   justify-content: space-evenly;
