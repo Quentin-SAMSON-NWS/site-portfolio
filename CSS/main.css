@@ -194,7 +194,20 @@
   height: 400px;
   border-radius: 75%;
   overflow: hidden;
-  box-shadow: 0 0 50px #e81cff;
+
+  background: black;
+}
+
+.main-pres::after {
+  position: absolute;
+  z-index: -1;
+  content: "";
+  width: 450px;
+  height: 450px;
+  border-radius: 75%;
+  overflow: hidden;
+  background: linear-gradient(-45deg, #f7aef8 0%, #3772ff 100%);
+  filter: blur(30px);
 }
 
 .image-pres {
@@ -232,10 +245,10 @@ body {
   background-color: black;
   display: flex;
   flex-direction: column;
+  background: #02169e;
   background: radial-gradient(
     circle,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(5, 5, 55, 1) 50%,
+    rgba(2, 22, 158, 1) 0%,
     rgba(0, 0, 0, 1) 100%
   );
 }
@@ -329,6 +342,14 @@ main {
 .pres {
   width: 50%;
   margin: 0.5em;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.lien {
+  display: flex;
+  justify-content: flex-start;
 }
 
 .image-main {
