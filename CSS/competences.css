@@ -11,12 +11,12 @@
 .carte-certif {
   margin: 30px 40px;
   width: 450px;
-  height: 400px;
+  height: 550px;
   perspective: 1000px;
 }
 
 .titre-certif {
-  font-size: var(--typo-size-l);
+  font-size: 24px;
   padding: 0px 10px;
 }
 
@@ -76,6 +76,7 @@ body.ClairSombre .fleche-verso-carte-certification {
 
 .titre-objectif-certification {
   text-align: center;
+  font-size: 24px;
 }
 
 .carte-certif-face-arriere ul li {
