@@ -4,6 +4,10 @@
   font-style: normal;
   text-decoration: none;
 }
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
 :root {
   --primary-color: #717171;
@@ -90,6 +94,7 @@
   cursor: pointer;
   margin: 1em;
   text-decoration: none;
+  text-align: center;
 }
 
 .navbar a.menu::before {
@@ -205,7 +210,6 @@
   width: 450px;
   height: 450px;
   border-radius: 75%;
-  overflow: hidden;
   background: linear-gradient(-45deg, #f7aef8 0%, #3772ff 100%);
   filter: blur(30px);
 }
@@ -316,6 +320,7 @@ main {
 .pres-parcours-licence {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding-left: var(--padding-icon-left-right);
   padding-right: var(--padding-icon-left-right);
   padding-top: 48px;
@@ -440,10 +445,21 @@ main {
   color: white;
   background-color: #18191f;
   flex-wrap: wrap;
+  text-align: center;
 }
 
 .footer a {
   color: white;
+}
+
+.img-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-footer {
+  height: 45%;
 }
 
 .reseaux {
@@ -548,5 +564,21 @@ main {
   }
   .pres-portfolio {
     flex-direction: column;
+  }
+  .main-pres-texte {
+    width: 90%;
+    padding: 0;
+  }
+
+  .presentation-text {
+    width: 90%;
+    text-align: center;
+  }
+  .presentation,
+  .pres-portfolio,
+  .pres-parcours,
+  .pres-parcours-licence {
+    flex-direction: column;
+    align-items: center;
   }
 }
