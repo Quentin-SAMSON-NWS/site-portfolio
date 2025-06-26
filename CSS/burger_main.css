@@ -2,6 +2,9 @@
 .topnav_menu{
     display: flex;
     flex-direction: row;
+  transition: transform 0.3s ease;
+  pointer-events: none;
+  z-index: 1000;
 }
 
 button {
@@ -56,6 +59,7 @@ button {
   justify-content: center;
 
   /* bloque les clics quand fermé */
+  
   pointer-events: none;
   opacity: 0;
   z-index: 999;
@@ -70,6 +74,19 @@ button {
 .topnav_open{
     display:block;
 }
+.topnav_menu {
+  transform: translateX(100vw);
+  transition: transform 0.3s ease;
+  pointer-events: none;
+  opacity: 0;
+  z-index: 1000;
+}
+
+.topnav_menu.active {
+  transform: translateX(0);
+  pointer-events: auto;
+  opacity: 1;
 
 
+}
 }
