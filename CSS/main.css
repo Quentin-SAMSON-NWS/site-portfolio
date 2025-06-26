@@ -159,6 +159,7 @@
 .a-propos {
   font-size: var(--font-size-title-h1);
   color: white;
+  text-align: center;
 }
 
 .titre-descr {
@@ -174,7 +175,7 @@
 }
 
 .descriptions {
-  width: 100%;
+
   padding: 10px;
   border-radius: 5px;
   font-size: 1rem;
@@ -306,6 +307,9 @@ main {
   margin-bottom: 0em;
 }
 
+.presentation-image{
+  max-height: 300px;
+}
 .pres-parcours {
   display: flex;
   justify-content: space-between;
@@ -348,11 +352,13 @@ main {
   padding-top: 0.5em;
 }
 .pres {
-  width: 100%;
+  width: 80%;
   margin: 0.5em;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  padding: 2.5em;
+  text-align: center;
 }
 
 .lien {
@@ -533,10 +539,13 @@ main {
   .pres-parcours-licence {
     flex-direction: column;
   }
+  .footer{
+    flex-direction: column;
+  }
 }
 @media screen and (max-width: 728px) {
   html {
-    width: fit-content;
+   
   }
   .navbar {
     display: flex;
@@ -588,7 +597,9 @@ main {
   .presentation,
   .pres-portfolio,
   .pres-parcours,
-  .pres-parcours-licence {
+  .pres-parcours-licence,
+  .footer,
+  .portfolio_row {
     flex-direction: column;
     align-items: center;
   }

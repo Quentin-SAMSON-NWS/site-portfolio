@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="CSS/formulaire.css" />
     <link rel="stylesheet" href="CSS/Contacte.css" />
     <link rel="stylesheet" href="CSS/competences.css" />
+    <link rel="stylesheet" href="CSS/burger.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -25,19 +26,25 @@
   </head>
 
   <body>
+    <script src="js/burger.js"></script>
+
     <header class="navbar">
-      <div>
+      <div class="logo-container">
         <a class="logo" href="#accueil">
-          <img class="image-header" src="./image/icone de site.svg"
-        /></a>
+          <img
+            class="image-header"
+            src="./image/icone de site.svg"
+            alt="Logo"
+          />
+        </a>
+        <button class="burger" id="burger" aria-label="Menu">&#9776;</button>
       </div>
-      <nav>
+
+      <nav id="nav" class="nav-links">
         <a class="menu" href="index.html">Accueil</a>
         <a class="menu" href="competences.html">Compétences</a>
         <a class="menu" href="Portfolio.html">Portfolio</a>
-        <a class="menu" class="community-manager" href="cm.html""
-          >Community manager</a
-        >
+        <a class="menu" href="cm.html">Community manager</a>
         <a class="menu" href="Contacter.html">Me contacter</a>
       </nav>
     </header>
@@ -238,7 +245,14 @@
       </div>
     </section>
     <footer>
-      <section class="footer">
+      <div class="footer">
+        <div class="img-footer">
+          <img
+            clas="logo-footer"
+            src="./image/logo simple.png"
+            alt="logo_Quentin_Samson"
+          />
+        </div>
         <div>
           <p>Quentin SAMSON</p>
           <p>Graphiste - Monteurs Vidéos</p>
@@ -248,20 +262,21 @@
           </p>
         </div>
         <div class="reseaux">
-          <a href="https://www.linkedin.com/in/quentin-samson-08492a335/"
-            >LinkedIn</a
+          <a
+            href="https://www.linkedin.com/in/quentin-samson-08492a335/"
+            target="_blank"
+            >Linkedin</a
           >
           <a href="https://github.com/Quentin-SAMSON-NWS" target="_blank"
             >GitHub</a
           >
         </div>
         <div class="mentions_legales">
-          <p>
-            <a href="mention-legales.html">Mentions légales</a>
-          </p>
+          <a href="mention-legales.html">Mentions légales</a>
+
           <p>&copy; Quentin SAMSON - Tous droits réservés - 2025</p>
         </div>
-      </section>
+      </div>
     </footer>
   </body>
 </html>

@@ -80,6 +80,8 @@
 
 .carrousel li {
   list-style: none;
+  display: flex;
+  justify-content: center;
 }
 
 .slide {
@@ -95,8 +97,8 @@
 
 .slide img {
   display: block;
-  height: 100%;
-  width: 100%;
+  height: inherit;
+  width: 75%;
 }
 
 @media screen and (max-width: 1024px) {
@@ -114,7 +116,6 @@
 
   .carrousel-image {
     width: 100%;
-    height: 50vh;
   }
 
   .carrousel button {
@@ -129,7 +130,6 @@
   }
 
   .carrousel-image {
-    height: 45vh;
   }
 
   .carrousel button {
