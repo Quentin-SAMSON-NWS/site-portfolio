@@ -1,22 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <title>Portfolio de Quentin SAMSON</title>
 
     <meta charset="utf-8" />
     <meta name="generator" content="Geany 1.38" />
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
-    <meta name="author" content="" />
+    <meta
+      name="descriptions"
+      content="Portfolio d'un jeune étudiant graphiste/monteur vidéo"
+    />
+    <meta name="keywords" content="Portfolio Graphiste" />
+    <meta name="author" content="Quentin Samson" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link rel="icone" href="" />
+    <link rel="icon" href="image/logo simple.png" />
     <link rel="stylesheet" href="CSS/main.css" />
     <link rel="stylesheet" href="CSS/maincv.css" />
     <link rel="stylesheet" href="CSS/formulaire.css" />
     <link rel="stylesheet" href="CSS/carte.css" />
     <link rel="stylesheet" href="CSS/competences.css" />
-    <link rel="stylesheet" href="CSS/portfolio.css" />
-    <link rel="stylesheet" href="CSS/burger.css" />
+    <link rel="stylesheet" href="CSS/carrousel.css" />
+    <link rel="stylesheet" href="CSS/Contacte.css" />
+    <link rel="stylesheet" href="CSS/burger_main.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,33 +29,62 @@
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Passion+One:wght@400;700;900&family=Titan+One&display=swap"
       rel="stylesheet"
     />
+    <script src="JS/burger.js" defer></script>
   </head>
 
   <body>
     <header class="navbar">
-      <script src="JS/burger.js" defer></script>
       <div>
         <a class="logo" href="#accueil">
           <img class="image-header" src="./image/icone de site.svg"
         /></a>
       </div>
       <nav>
-        <a class="menu" href="index.html">Accueil</a>
-        <a class="menu" href="competences.html">Compétences</a>
-        <a class="menu" href="Portfolio.html">Portfolio</a>
-        <a class="menu" class="community-manager" href="cm.html"
-          >Community manager</a
+        <span id="nav-label" hidden>Navigation</span>
+        <button
+          id="btnOpen"
+          class="topnav_open"
+          aria-expanded="false"
+          aria-labelledby="nav-label"
         >
-        <a class="menu" href="Contacter.html">Me contacter</a>
+          <img src="./image/barre-de-menu.png" alt="" width="40" height="40" />
+        </button>
+        <div class="topnav_menu" role="dialog" aria-labelledby="nav-label">
+          <button class="topnav_close" id="btnClose" aria-label="Close">
+            <img src="./image/signe-de-la-croix.png" width="28" height="28" />
+          </button>
+          <a
+            class="menu"
+            class="topnav_item"
+            href="index.html"
+            class="topnavlink"
+            >Accueil</a
+          >
+          <a
+            class="menu"
+            class="topnav_item"
+            href="competences.html"
+            class="topnavlink"
+            >Compétences</a
+          >
+          <a
+            class="menu"
+            class="topnav_item"
+            href="Portfolio.html"
+            class="topnavlink"
+            >Portfolio</a
+          >
+          <a
+            class="menu"
+            class="topnav_item"
+            class="community-manager"
+            href="cm.html"
+            class="topnavlink"
+            >Community manager</a
+          >
+          <a class="menu" href="Contacter.html">Me contacter</a>
+        </div>
       </nav>
-      <a class="menu-burger">
-        <span class="burger-icon">
-          <span></span>
-          <span></span>
-          <span></span>
-        </span>
-        <span class="close-menu">×</span>
-      </a>
     </header>
     <main>
       <h2 class="h2-titre" id="Portfolio">Portfolio</h2>

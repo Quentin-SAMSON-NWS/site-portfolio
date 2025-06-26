@@ -1,92 +1,69 @@
-
 .topnav_menu{
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
   transition: transform 0.3s ease;
-  pointer-events: none;
-  z-index: 1000;
 }
 
 button {
-    background: none;
-    border:none;
-    padding: 0;
+  background: none;
+  border:none;
+  padding: 0;
     
 }
 
 .topnav_close{
-    display: none;
-    margin-inline-start: auto;
+  display: none;
+  margin-inline-start: auto;
 }
 
 .topnav_close img{
-    width:2.5em;
+  width:2.5em;
 }
 
-.topnav_open{
-  display: block;
-  z-index: 2000;
+@media screen and (min-width: 903px) {
+  .topnav_open {
+    display: none !important;
+  }
 }
-
- .topnav_open[aria-expanded="true"]{
-    + .topnav_menu{
-        translate: 0;
-    }
-
- }
 
 @media screen and (max-width: 903px) {
-    .topnav_menu{
-    /*position: fixed;
-    inset:0;
-    translate: 100vw 0;
-    transition: translate 0.5s ease-in-out;
+  .topnav_menu{
+    position: fixed;
+    inset: 0;
+    transform: translateX(100vw);
+    transition: transform 0.3s ease-in-out;
+    background-color: #080708;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 
-  background-color: #080708;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-*/
-  position: fixed;
-  inset: 0;
-  transform: translateX(100vw);
-  transition: transform 0.3s ease-in-out;
-  background-color: #080708;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
+    /* bloque les clics quand fermé */
+    pointer-events: none;
+    opacity: 0;
+    z-index: 999;
+  }
 
-  /* bloque les clics quand fermé */
-  
-  pointer-events: none;
-  opacity: 0;
-  z-index: 999;
-    }
-    .navbar nav{
-
-    }
-    .topnav_close{
+  .topnav_close{
     display: block;
     margin-inline-start: auto;
-}
-.topnav_open{
+  }
+
+  .topnav_open{
     display:block;
-}
-.topnav_menu {
-  transform: translateX(100vw);
-  transition: transform 0.3s ease;
-  pointer-events: none;
-  opacity: 0;
-  z-index: 1000;
-}
+  }
 
-.topnav_menu.active {
-  transform: translateX(0);
-  pointer-events: auto;
-  opacity: 1;
+  .topnav_menu {
+    transform: translateX(100vw);
+    transition: transform 0.3s ease;
+    pointer-events: none;
+    opacity: 0;
+    z-index: 1000;
+  }
 
-
-}
+  .topnav_menu.active {
+    transform: translateX(0);
+    pointer-events: auto;
+    opacity: 1;
+  }
 }
