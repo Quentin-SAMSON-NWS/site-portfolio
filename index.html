@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="CSS/competences.css" />
     <link rel="stylesheet" href="CSS/carrousel.css" />
     <link rel="stylesheet" href="CSS/Contacte.css" />
+    <link rel="stylesheet" href="CSS/burger_main.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -38,13 +39,50 @@
         /></a>
       </div>
       <nav>
-        <a class="menu" href="index.html">Accueil</a>
-        <a class="menu" href="competences.html">Compétences</a>
-        <a class="menu" href="Portfolio.html">Portfolio</a>
-        <a class="menu" class="community-manager" href="cm.html"
-          >Community manager</a
+        <span id="nav-label" hidden>Navigation</span>
+        <button
+          id="btnOpen"
+          class="topnav_open"
+          aria-expanded="false"
+          aria-labelledby="nav-label"
         >
-        <a class="menu" href="Contacter.html">Me contacter</a>
+          <img src="./image/barre-de-menu.png" alt="" width="40" height="40" />
+        </button>
+        <div class="topnav_menu" role="dialog" aria-labelledby="nav-label">
+          <button class="topnav_close" id="btnClose" aria-label="Close">
+            <img src="./image/signe-de-la-croix.png" width="28" height="28" />
+          </button>
+          <a
+            class="menu"
+            class="topnav_item"
+            href="index.html"
+            class="topnavlink"
+            >Accueil</a
+          >
+          <a
+            class="menu"
+            class="topnav_item"
+            href="competences.html"
+            class="topnavlink"
+            >Compétences</a
+          >
+          <a
+            class="menu"
+            class="topnav_item"
+            href="Portfolio.html"
+            class="topnavlink"
+            >Portfolio</a
+          >
+          <a
+            class="menu"
+            class="topnav_item"
+            class="community-manager"
+            href="cm.html"
+            class="topnavlink"
+            >Community manager</a
+          >
+          <a class="menu" href="Contacter.html">Me contacter</a>
+        </div>
       </nav>
     </header>
     <main>
@@ -87,8 +125,8 @@
               class="presentation-image"
               src="/image/IMG-20250606-WA0017.jpg"
             />
-            <h2 id="a-propos" class="a-propos">A propos de moi</h2>
-            <h2 class="sous-titre-a-propos">découvrez qui je suis !</h2>
+            <h2 id="a-propos" class="a-propos">À propos de moi</h2>
+            <h2 class="sous-titre-a-propos">Découvrez qui je suis !</h2>
             <a href="CV Quentin SAMSON_v3.pdf" class="cv_installer">Mon CV</a>
           </div>
           <div class="presentation-text">
