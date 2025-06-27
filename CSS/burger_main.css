@@ -16,6 +16,10 @@ button {
   margin-inline-start: auto;
 }
 
+.croix-image{
+    color: aliceblue;
+}
+
 .topnav_close img{
   width:2.5em;
 }

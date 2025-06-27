@@ -87,6 +87,19 @@ td {
   max-width: fit-content;
 }
 
+.maquettes {
+  display: flex;
+  width: 90%;
+  justify-content: space-evenly;
+  flex-direction: row;
+  margin-top: 3em;
+
+}
+
+.maquettes img {
+  width : 25%;
+}
+
 /*
 
 .main-container-texte-p {
