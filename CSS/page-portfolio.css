@@ -24,13 +24,33 @@
   margin: auto;
   color: white;
   background-color: #18191f;
+  margin-bottom: 4em;
 }
+
+.vidéo_motion{
+  width: 700px;
+}
+
+.main-container-vidéo{
+  width: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.main-container-texte{
+  margin: 3em;
+}
+
 .main-container-texte-p {
   width: 100%;
 }
 
 .image-main {
-  width: 350px;
+  width: 450px;
+}
+.image-main-2{
+  width:700px;
 }
 .image-tableau {
   width: 150%;
@@ -97,7 +117,7 @@
 }
 
 .cv_installer {
-  width: 90%;
+  width: 450px;
   max-width: 500px;
   height: 60px;
   display: flex;
@@ -148,3 +168,19 @@
   display: flex;
   flex-direction: row;
 }
+
+
+@media screen and (max-width: 1000px) {
+  .vidéo_motion {
+width: 450px;
+  }
+
+}
+
+@media screen and (max-width: 728px) {
+  .vidéo_motion {
+width: 300px;
+  }
+
+}
+

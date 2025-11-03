@@ -45,6 +45,7 @@
   background: #141414;
   /* background: linear-gradient(270deg, #40c9ff 0%, #e81cff 60%);*/
   color: white;
+  padding: 0.5em;
 }
 
 .carte-certif-face-arriere {

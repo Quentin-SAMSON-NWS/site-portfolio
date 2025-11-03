@@ -1,7 +1,7 @@
 .topnav_menu{
   display: flex;
   flex-direction: row;
-  transition: transform 0.3s ease;
+  transition: transform 0.5s ease;
 }
 
 button {
