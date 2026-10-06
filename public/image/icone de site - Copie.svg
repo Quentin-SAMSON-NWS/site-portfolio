@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_1" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512">
+  <!-- Generator: Adobe Illustrator 29.0.0, SVG Export Plug-In . SVG Version: 2.1.0 Build 186)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: url(#Dégradé_sans_nom_44);
+      }
+
+      .st1 {
+        fill: #010101;
+      }
+
+      .st1, .st2 {
+        stroke: #302d7e;
+        stroke-miterlimit: 10;
+      }
+
+      .st3 {
+        fill: url(#Dégradé_sans_nom_441);
+      }
+
+      .st2 {
+        fill: url(#Dégradé_sans_nom_443);
+      }
+
+      .st4 {
+        fill: url(#Dégradé_sans_nom_442);
+      }
+    </style>
+    <linearGradient id="Dégradé_sans_nom_44" data-name="Dégradé sans nom 44" x1="326.35" y1="262.23" x2="326.35" y2="193.62" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#302d7e"/>
+      <stop offset="1" stop-color="#e50c7e"/>
+    </linearGradient>
+    <linearGradient id="Dégradé_sans_nom_441" data-name="Dégradé sans nom 44" x1="242.32" y1="253.33" x2="242.32" y2="89.26" xlink:href="#Dégradé_sans_nom_44"/>
+    <linearGradient id="Dégradé_sans_nom_442" data-name="Dégradé sans nom 44" x1="263.4" y1="428.29" x2="263.4" y2="265.22" xlink:href="#Dégradé_sans_nom_44"/>
+    <linearGradient id="Dégradé_sans_nom_443" data-name="Dégradé sans nom 44" x1="391.01" y1="158.82" x2="391.01" y2="158.82" xlink:href="#Dégradé_sans_nom_44"/>
+  </defs>
+  <rect class="st1" x="0" y="-1.66" width="512" height="521.04"/>
+  <polyline class="st0" points="292.15 216.49 316.58 193.62 360.55 239.36 339.05 262.23"/>
+  <path class="st3" d="M286.29,253.33l-17.75-35.75-38.04.41c-10.84.12-21.31-4.2-29.22-12.05l-2.63-2.61c-8.36-8.3-13.16-19.85-13.29-31.97l-.04-3.82c-.14-13.43,5.47-26.2,15.25-34.75h0c7.42-6.48,16.71-10.07,26.33-10.17l14.08-.15c16.12-.17,31.87,4.91,44.95,14.5h0c7.68,5.64,12.23,14.69,12.23,24.32v8.81h35.01v-37.08l-44.95-43.75h-90.87l-45.92,46.73v69.6l42.02,47.73"/>
+  <path class="st4" d="M314.7,265.22l35.18,46.73v71.59l-45.92,44.75h-91.85l-35.18-36.63v-33.97h33.22l13.63,15.79c8.96,10.38,21.88,16.33,35.46,16.33h15.64c9.15,0,18.03-3.32,25.14-9.4h0c9.39-8.03,14.85-20.12,14.85-32.89v-3.63c0-11.53-4.45-22.56-12.32-30.54l-2.47-2.51c-7.44-7.55-17.36-11.76-27.67-11.76h-36.17l-26.08-32.87,104.55-.99Z"/>
+  <path class="st2" d="M391.01,158.82"/>
+</svg>
