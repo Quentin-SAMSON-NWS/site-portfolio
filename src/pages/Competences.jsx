@@ -1,4 +1,5 @@
-﻿
+﻿import Text from '../components/Text';
+
 const cards = [
   { titre: 'Photographie', titreDos: 'Photos', items: ['Retouche photo', 'Prise de vue'], desc: "Je capture des couchers de soleil et des paysages dès que l'occasion se présente." },
   { titre: 'création graphique', titreDos: 'Graphisme', items: ['Illustrator', 'photoshop', 'charte graphique', 'logos'], desc: "Je maîtrise Illustrator, Photoshop et InDesign. J'ai conçu plusieurs logos et chartes graphiques." },
@@ -30,7 +31,7 @@ export default function Competences() {
                 <div className="absolute flex flex-col justify-center w-full h-full [backface-visibility:hidden] rounded-[20px] bg-[#141414] text-white p-[0.5em] [transform:rotateY(180deg)]">
                   <h3 className="text-center text-2xl">{card.titreDos}</h3>
                   <ul>{card.items.map((item, j) => <li key={j}>{item}</li>)}</ul>
-                  <p>{card.desc}</p>
+                  <Text>{card.desc}</Text>
                 </div>
               </div>
             </div>

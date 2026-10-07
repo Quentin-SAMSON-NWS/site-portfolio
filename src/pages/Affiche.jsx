@@ -1,6 +1,7 @@
-import afficheNw5Img from '../assets/image/AfficheNW5.jpg';
+﻿import afficheNw5Img from '../assets/image/AfficheNW5.jpg';
 import afficheNissanImg from '../assets/image/affiche nissan gtr r35 petit.png';
 import r35Img from '../assets/image/r35.png';
+import Text from '../components/Text';
 
 export default function Affiche() {
   return (
@@ -14,10 +15,10 @@ export default function Affiche() {
           <img src={afficheNw5Img} alt="AfficheNW5" className="w-112.5" />
         </div>
         <div className="m-12">
-          <p className="w-full">
+          <Text className="w-full">
             Cette affiche a été créée pour un projet du BDE, qui consistait à organiser
             un tournoi de 5 contre 5 inter-classes au sein de notre école.
-          </p>
+          </Text>
         </div>
       </div>
 
@@ -27,19 +28,19 @@ export default function Affiche() {
           <img src={afficheNissanImg} alt="nissan gtr" className="w-112.5" />
         </div>
         <div className="m-12">
-          <p className="w-full">
+          <Text className="w-full">
             Voici ma première affiche ! Elle représente l'une de mes voitures préférées
             avec Godzilla en arrière-plan. Pourquoi ? Parce que cette voiture est surnommée
             "Godzilla" en raison de sa puissance et de son poids.
-          </p>
+          </Text>
         </div>
         <div className="flex justify-center items-center">
           <img src={r35Img} alt="r35-v2" className="w-175" />
         </div>
         <div className="m-12">
-          <p className="w-full">
+          <Text className="w-full">
             Cette deuxième version de la R35 apporte davantage de complexité à la composition.
-          </p>
+          </Text>
         </div>
       </div>
     </>

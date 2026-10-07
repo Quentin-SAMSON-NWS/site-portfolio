@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-const menuBtnClass = "relative w-30 h-10 bg-[#080708] flex items-center text-white justify-center border-0 gap-3 rounded-lg cursor-pointer m-[1em] text-center before:content-[''] before:absolute before:inset-0 before:left-[-4px] before:top-[-1px] before:m-auto before:w-32 before:h-12 before:rounded-[10px] before:bg-[linear-gradient(-45deg,#f7aef8_0%,#3772ff_100%)] before:-z-10 before:pointer-events-none before:transition-all before:duration-[600ms] before:ease-[cubic-bezier(0.175,0.885,0.32,1.275)] after:content-[''] after:-z-1 after:absolute after:inset-0 after:bg-[linear-gradient(-45deg,#f7aef8_0%,#3772ff_100%)] after:scale-95 after:blur-[20px] hover:after:blur-[30px] hover:before:-rotate-2 hover:before:scale-95";
+const menuBtnClass = "relative w-30 h-10 bg-[#080708] flex items-center text-white justify-center border-0 gap-3 rounded-lg cursor-pointer m-[1em] text-center leading-5 before:content-[''] before:absolute before:inset-0 before:left-[-4px] before:top-[-1px] before:m-auto before:w-32 before:h-12 before:rounded-[10px] before:bg-[linear-gradient(-45deg,#f7aef8_0%,#3772ff_100%)] before:-z-10 before:pointer-events-none before:transition-all before:duration-[600ms] before:ease-[cubic-bezier(0.175,0.885,0.32,1.275)] after:content-[''] after:-z-1 after:absolute after:inset-0 after:bg-[linear-gradient(-45deg,#f7aef8_0%,#3772ff_100%)] after:scale-95 after:blur-[20px] hover:after:blur-[30px] hover:before:-rotate-2 hover:before:scale-95";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);

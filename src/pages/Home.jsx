@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+﻿import { useState, useEffect } from 'react';
 import quentinPhoto from '../assets/image/QUENTIN-Photoroom.png';
 import aboutPhoto from '../assets/image/P1026672.JPG';
 import lyceeImg from '../assets/image/lycée.jpg';
@@ -14,6 +14,7 @@ import slide6 from '../assets/image/6.png';
 import slide7 from '../assets/image/7.png';
 import slide8 from '../assets/image/8.png';
 import slide9 from '../assets/image/9.png';
+import Text from '../components/Text';
 
 const typewriterTexts = ["L'art numérique"];
 const carouselImages = [slide1, slide2, slide3, slide4, slide5, slide6, slide7, slide8, slide9];
@@ -65,10 +66,10 @@ export default function Home() {
     <>
       {/* Hero */}
       <section>
-        <div className="w-full flex justify-evenly items-center text-white py-36 max-[728px]:flex-col max-[728px]:text-center max-[728px]:items-center">
-          <div class="flex flex-col items-center justify-center w-100 h-100 object-contain rounded-[75%] overflow-hidden bg-black after:absolute after:-z-10 after:content-[''] after:w-112.5 after:h-112.5 after:rounded-[75%] after:bg-[linear-gradient(-45deg,#f7aef8_0%,#3772ff_100%)] after:blur-[30px]">
+        <div className="h-[85.5vh] w-full flex justify-evenly items-center text-white py-36 max-[728px]:h-auto max-[728px]:flex-col max-[728px]:text-center max-[728px]:items-center max-[728px]:py-12 max-[728px]:gap-8">
+          <div class="flex flex-col items-center justify-center w-100 h-100 rounded-[75%] overflow-hidden bg-black after:absolute after:-z-10 after:content-[''] after:w-112.5 after:h-112.5 after:rounded-[75%] after:bg-[linear-gradient(-45deg,#f7aef8_0%,#3772ff_100%)] after:blur-[30px] max-[728px]:w-64 max-[728px]:h-64 max-[728px]:after:w-72 max-[728px]:after:h-72">
             <img
-              className="w-75 pt-30"
+              className="w-75 pt-30 max-[728px]:w-44 max-[728px]:pt-12"
               src={quentinPhoto}
               alt="Quentin Samson"
             />
@@ -84,19 +85,19 @@ export default function Home() {
                 <label>|</label>
               </h2>
             </div>
-            <p className="text-base">
+            <Text className="text-base">
               J'explore les limites de l'imaginaire à travers des créations
               vibrantes et innovantes. Mon portfolio reflète ma quête d'harmonie
               entre technologie et émotion, transformant chaque idée en une
               œuvre unique. Bonne découverte !
-            </p>
+            </Text>
           </div>
         </div>
       </section>
 
       {/* À propos */}
       <section>
-        <section className="[background:linear-gradient(#0f0e0e,#0f0e0e)_padding-box,linear-gradient(145deg,transparent_35%,#e81cff,#40c9ff)_border-box] border-2 border-transparent flex w-[85%] text-sm text-[whitesmoke] gap-5 rounded-[26px] mx-auto mt-20 mb-32 flex-row max-[728px]:flex-col max-[728px]:text-center max-[728px]:items-center">
+        <section className="[background:linear-gradient(#0f0e0e,#0f0e0e)_padding-box,linear-gradient(145deg,transparent_35%,#e81cff,#40c9ff)_border-box] border-2 border-transparent flex w-[85%] text-sm text-[whitesmoke] gap-5 rounded-[26px] mx-auto mt-17.5 mb-28 flex-row p-3.5 max-[728px]:flex-col max-[728px]:text-center max-[728px]:items-center">
           <div className="w-1/4 mx-auto flex justify-center flex-col items-center max-[728px]:w-3/4">
             <img className="max-h-75" src={aboutPhoto} alt="Quentin" />
             <h2 id="a-propos" className="text-[36px] text-white text-center">À propos de moi</h2>
@@ -104,12 +105,12 @@ export default function Home() {
             <a href={cvPdf} className={btnGlowClass}>Mon CV</a>
           </div>
           <div className="w-3/4 text-base text-left max-[728px]:w-[90%] max-[728px]:text-center">
-            <p>Bonjour et bienvenue 👋,</p>
-            <p>Je m'appelle Quentin Samson, étudiant à la Normandie Web School, passionné par la création numérique. Avec un parcours atypique mêlant deux années en licence informatique et une formation en communication digitale, je cultive une approche polyvalente et créative du digital, à la croisée entre technique, graphisme et stratégie.</p>
-            <p>Actuellement à la recherche d’une alternance en communication digitale ou création graphique, je développe des projets concrets mêlant design, storytelling, vidéo, web et réseaux sociaux. Mon objectif : transmettre, inspirer et créer de la valeur, que ce soit à travers des visuels impactants, des sites web utiles ou du contenu engageant.</p>
-            <p>Ce portfolio est le reflet de mon univers : structuré, créatif et humain. Vous y trouverez des projets réalisés en autonomie ou en collaboration, dans le cadre de mes études, de stages ou de missions personnelles. Je m'investis pleinement dans chaque projet, avec rigueur, passion et une volonté constante de progresser.</p>
-            <p>En pleine démarche de développement personnel, je mets un point d'honneur à renforcer mes compétences techniques (design, montage, communication digitale) autant que mes soft skills (organisation, clarté, leadership, écoute). Mon ambition est d’avoir un impact positif, que ce soit en entreprise, dans mes créations ou auprès de ceux que j'accompagne.</p>
-            <p>👉 Vous êtes recruteur, freelance, entrepreneur ou simplement curieux ? N’hésitez pas à explorer mon univers ou à me contacter pour échanger !</p>
+            <Text className='py-4'>Bonjour et bienvenue 👋,</Text>
+            <Text className='py-4'>Je m'appelle Quentin Samson, étudiant à la Normandie Web School, passionné par la création numérique. Avec un parcours atypique mêlant deux années en licence informatique et une formation en communication digitale, je cultive une approche polyvalente et créative du digital, à la croisée entre technique, graphisme et stratégie.</Text>
+            <Text className='py-4'>Actuellement à la recherche d’une alternance en communication digitale ou création graphique, je développe des projets concrets mêlant design, storytelling, vidéo, web et réseaux sociaux. Mon objectif : transmettre, inspirer et créer de la valeur, que ce soit à travers des visuels impactants, des sites web utiles ou du contenu engageant.</Text>
+            <Text className='py-4'>Ce portfolio est le reflet de mon univers : structuré, créatif et humain. Vous y trouverez des projets réalisés en autonomie ou en collaboration, dans le cadre de mes études, de stages ou de missions personnelles. Je m'investis pleinement dans chaque projet, avec rigueur, passion et une volonté constante de progresser.</Text>
+            <Text className='py-4'>En pleine démarche de développement personnel, je mets un point d'honneur à renforcer mes compétences techniques (design, montage, communication digitale) autant que mes soft skills (organisation, clarté, leadership, écoute). Mon ambition est d’avoir un impact positif, que ce soit en entreprise, dans mes créations ou auprès de ceux que j'accompagne.</Text>
+            <Text className='py-4'>👉 Vous êtes recruteur, freelance, entrepreneur ou simplement curieux ? N’hésitez pas à explorer mon univers ou à me contacter pour échanger !</Text>
           </div>
         </section>
       </section>
@@ -120,36 +121,36 @@ export default function Home() {
           <h2 className="w-[85%] mx-auto text-[45px] leading-11 text-center text-white border-b border-[#f5f7fa] py-2 my-4">Mon parcours scolaire</h2>
         </div>
 
-        <section className="flex justify-between px-14 py-12 my-10 items-center text-white max-[800px]:flex-col max-[728px]:flex-col">
-          <div className="w-2/5 flex justify-center m-2">
+        <section className="flex justify-between px-14 py-12 my-10 items-center text-white max-[800px]:flex-col max-[800px]:px-6 max-[800px]:py-6">
+          <div className="w-2/5 flex justify-center m-2 max-[800px]:w-full">
             <img src={lyceeImg} alt="lycée" className="w-full" />
           </div>
-          <div className="w-4/5 m-2 flex justify-between flex-col p-10 text-center max-[728px]:w-3/4">
+          <div className="flex-1 m-2 flex justify-between flex-col p-10 text-center max-[800px]:w-full max-[800px]:p-4">
             <h2 className="text-[35px] text-center text-[#f5f7fa] border-b border-[#f5f7fa] py-2 pb-8">Lycée Delamare Debouteville</h2>
-            <p className='py-6'>J’ai obtenu mon baccalauréat au lycée Delamare Deboutteville, avec pour spécialités Mathématiques et NSI (Numérique et Sciences de l’Informatique). C’est au sein de cet établissement que j’ai découvert ma passion pour l’informatique.</p>
-            <p className='py-6'>Cette première immersion dans cet univers fascinant m’a donné envie d’approfondir mes connaissances et de développer mes compétences dans ce domaine. Mon parcours a commencé par l’exploration des composants d’un ordinateur, ce qui m’a permis de comprendre son fonctionnement en profondeur.</p>
-            <p className='py-6'>Par la suite, je me suis orienté vers la programmation et le développement, en apprenant à créer des solutions numériques et à m’initier aux bases du codage. Cette expérience a été déterminante pour façonner mon intérêt pour l’informatique et m’a motivé à poursuivre cette voie avec enthousiasme et détermination.</p>
+            <Text className='py-6'>J’ai obtenu mon baccalauréat au lycée Delamare Deboutteville, avec pour spécialités Mathématiques et NSI (Numérique et Sciences de l’Informatique). C’est au sein de cet établissement que j’ai découvert ma passion pour l’informatique.</Text>
+            <Text className='py-6'>Cette première immersion dans cet univers fascinant m’a donné envie d’approfondir mes connaissances et de développer mes compétences dans ce domaine. Mon parcours a commencé par l’exploration des composants d’un ordinateur, ce qui m’a permis de comprendre son fonctionnement en profondeur.</Text>
+            <Text className='py-6'>Par la suite, je me suis orienté vers la programmation et le développement, en apprenant à créer des solutions numériques et à m’initier aux bases du codage. Cette expérience a été déterminante pour façonner mon intérêt pour l’informatique et m’a motivé à poursuivre cette voie avec enthousiasme et détermination.</Text>
           </div>
         </section>
 
-        <section className="flex justify-between px-14 py-12 my-10 items-center text-[#18191f] bg-[rgba(240,240,240,0.884)] w-4/5 mx-auto rounded-[25px] max-[800px]:flex-col max-[728px]:flex-col">
-          <div className="w-4/5 flex justify-between flex-col text-center max-[728px]:w-3/4">
+        <section className="flex justify-between px-14 py-12 my-10 items-center text-[#18191f] bg-[rgba(240,240,240,0.884)] w-4/5 mx-auto rounded-[25px] max-[800px]:flex-col max-[800px]:px-6 max-[800px]:py-6">
+          <div className="flex-1 flex justify-between flex-col text-center max-[800px]:w-full">
             <h2 className="text-[35px] text-[#18191f] text-center border-b border-[#18191f] py-2 pb-[0.8em]">Licence informatique</h2>
-            <p className="py-8 rounded text-base">Après l’obtention de mon baccalauréat, j’ai choisi d’intégrer cette licence afin de poursuivre ma passion pour l’informatique et approfondir mes connaissances dans ce domaine fascinant. Cette formation m’a offert l’opportunité de développer des compétences solides, notamment dans le domaine de la création web, où j’ai appris à concevoir et réaliser des sites et des interfaces attractives et fonctionnelles.</p>
-            <p className="py-8">Par ailleurs, j’ai également pu me perfectionner dans la programmation, en explorant divers langages et en apprenant à résoudre des problématiques complexes par le biais de solutions informatiques adaptées. Cette expérience m’a permis d’allier théorie et pratique, tout en renforçant mon intérêt pour les technologies numériques et leur rôle central dans le monde moderne. Grâce à cette licence, j’ai non seulement acquis des bases techniques essentielles, mais j’ai également renforcé mon envie de continuer à évoluer dans un univers où innovation et créativité se rencontrent.</p>
+            <Text className="py-8 rounded text-base">Après l’obtention de mon baccalauréat, j’ai choisi d’intégrer cette licence afin de poursuivre ma passion pour l’informatique et approfondir mes connaissances dans ce domaine fascinant. Cette formation m’a offert l’opportunité de développer des compétences solides, notamment dans le domaine de la création web, où j’ai appris à concevoir et réaliser des sites et des interfaces attractives et fonctionnelles.</Text>
+            <Text className="py-8">Par ailleurs, j’ai également pu me perfectionner dans la programmation, en explorant divers langages et en apprenant à résoudre des problématiques complexes par le biais de solutions informatiques adaptées. Cette expérience m’a permis d’allier théorie et pratique, tout en renforçant mon intérêt pour les technologies numériques et leur rôle central dans le monde moderne. Grâce à cette licence, j’ai non seulement acquis des bases techniques essentielles, mais j’ai également renforcé mon envie de continuer à évoluer dans un univers où innovation et créativité se rencontrent.</Text>
           </div>
-          <div className="w-2/5 flex justify-center m-2">
+          <div className="w-2/5 flex justify-center m-2 max-[800px]:w-full">
             <img src={licenceImg} alt="licence" className="w-full" />
           </div>
         </section>
 
-        <section className="flex justify-between px-14 py-12 my-10 items-center text-white max-[800px]:flex-col max-[728px]:flex-col">
-          <div className="w-2/5 flex justify-center m-2">
+        <section className="flex justify-between px-14 py-12 my-10 items-center text-white max-[800px]:flex-col max-[800px]:px-6 max-[800px]:py-6">
+          <div className="w-2/5 flex justify-center m-2 max-[800px]:w-full">
             <img src={nwsImg} alt="NWS" className="w-full" />
           </div>
-          <div className="w-4/5 m-2 flex justify-between flex-col p-10 text-center max-[728px]:w-3/4">
+          <div className="flex-1 m-2 flex justify-between flex-col p-10 text-center max-[800px]:w-full max-[800px]:p-4">
             <h2 className="text-[35px] text-center text-[#f5f7fa] border-b border-[#f5f7fa] py-2 pb-[0.8em]">Normandie Web School</h2>
-            <p className="p-2.5 rounded text-base">J'ai décidé de poursuivre mes études au sein de cette école, car je voulais plus de projets concrets et une envie de développer ma créativité. Grâce à cette école, je vais pouvoir faire des projets passionnants tout en améliorant mes compétences dans le domaine du graphisme. À côté des cours, je créais des affiches, flyers, logos, charte graphique pour une équipe E-sport, mais je fais aussi du montage vidéos, car j'adore l'univers de l'audiovisuel, car comme le graphisme, c'est moyen passionnant pour transmettre ses idées, visions des choses et de pouvoirs inspirer le monde qui nous entoure !</p>
+            <Text className="p-2.5 rounded text-base">J'ai décidé de poursuivre mes études au sein de cette école, car je voulais plus de projets concrets et une envie de développer ma créativité. Grâce à cette école, je vais pouvoir faire des projets passionnants tout en améliorant mes compétences dans le domaine du graphisme. À côté des cours, je créais des affiches, flyers, logos, charte graphique pour une équipe E-sport, mais je fais aussi du montage vidéos, car j'adore l'univers de l'audiovisuel, car comme le graphisme, c'est moyen passionnant pour transmettre ses idées, visions des choses et de pouvoirs inspirer le monde qui nous entoure !</Text>
           </div>
         </section>
       </section>
@@ -158,16 +159,16 @@ export default function Home() {
       <div>
         <div className="flex justify-evenly w-[85%] rounded-[26px] mx-auto bg-[#131010] px-14 py-12 mt-10 mb-12 items-center text-white max-lg:flex-col max-lg:w-[90%] max-lg:p-6">
           <div className="flex flex-col justify-center p-3.5 w-2/5 max-lg:w-full max-lg:text-center max-lg:mb-5">
-            <h2 className="w-[85%] mx-auto text-center text-[#f5f7fa] leading-11 py-2 my-4 text-[35px]">Interview d'une alternante en communication digitale</h2>
-            <p>Ici, vous allez découvrir une interview d'une alternante en communication digitale que j'ai faite et que j'ai retranscrite en format carrousel LinkedIn.</p>
+            <h2 className="w-[85%] mx-auto text-center text-[#f5f7fa] leading-11 py-2 my-4 text-[35px] max-[480px]:flex max-[480px]:justify-center">Interview d'une alternante en communication digitale</h2>
+            <Text>Ici, vous allez découvrir une interview d'une alternante en communication digitale que j'ai faite et que j'ai retranscrite en format carrousel LinkedIn.</Text>
           </div>
-          <div className="relative h-screen w-[50vw] overflow-hidden max-lg:w-full max-[480px]:h-[40vh]">
+          <div className="relative w-[50vw] aspect-4/5 overflow-hidden max-lg:w-full">
             <button className="absolute border-none outline-none text-[2.6rem] z-2 cursor-pointer text-[aliceblue] -translate-y-1/2 top-1/2 p-2.5 bg-transparent left-2.5" id="prev" onClick={prevSlide}>&#10096;</button>
             <button className="absolute border-none outline-none text-[2.6rem] z-2 cursor-pointer text-[aliceblue] -translate-y-1/2 top-1/2 p-2.5 bg-transparent right-2.5" id="next" onClick={nextSlide}>&#10097;</button>
             <ul className="relative h-full w-full m-0 p-0 list-none">
               {carouselImages.map((src, index) => (
                 <li key={index} className={`absolute top-0 left-0 h-full w-full list-none flex justify-center transition-opacity duration-500 ease-in-out ${index === activeSlide ? 'opacity-100' : 'opacity-0'}`}>
-                  <img src={src} alt={'slide ' + (index + 1)} className="block w-full h-full object-cover" />
+                  <img src={src} alt={'slide ' + (index + 1)} className="block w-full h-full object-contain" />
                 </li>
               ))}
             </ul>

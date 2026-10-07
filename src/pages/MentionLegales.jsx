@@ -1,4 +1,5 @@
-﻿
+﻿import Text from '../components/Text';
+
 export default function MentionLegales() {
   return (
     <>
@@ -13,15 +14,15 @@ export default function MentionLegales() {
           <li>Téléphone : 06 49 59 94 47</li>
         </ul>
         <h2>2. Propriété Intellectuelle</h2>
-        <p>L'ensemble des contenus présents sur ce site est protégé par les lois en vigueur. Toute reproduction, représentation, modification est interdite sauf autorisation écrite préalable.</p>
+        <Text>L'ensemble des contenus présents sur ce site est protégé par les lois en vigueur. Toute reproduction, représentation, modification est interdite sauf autorisation écrite préalable.</Text>
         <h2>3. Responsabilité</h2>
-        <p>L'éditeur du site s'efforce de fournir des informations aussi précises que possible.</p>
+        <Text>L'éditeur du site s'efforce de fournir des informations aussi précises que possible.</Text>
         <h2>4. Protection des Données Personnelles</h2>
-        <p>Conformément au RGPD, vous disposez d'un droit d'accès, de rectification et de suppression. Contactez : samson.quentin13@gmail.com</p>
+        <Text>Conformément au RGPD, vous disposez d'un droit d'accès, de rectification et de suppression. Contactez : samson.quentin13@gmail.com</Text>
         <h2>5. Cookies</h2>
-        <p>Le site peut utiliser des cookies pour améliorer l'expérience utilisateur.</p>
+        <Text>Le site peut utiliser des cookies pour améliorer l'expérience utilisateur.</Text>
         <h2>6. Droit Applicable</h2>
-        <p>Les présentes mentions légales sont régies par le droit français.</p>
+        <Text>Les présentes mentions légales sont régies par le droit français.</Text>
       </section>
     </>
   );

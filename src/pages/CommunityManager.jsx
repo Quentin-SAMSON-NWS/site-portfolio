@@ -1,4 +1,4 @@
-import home1Img from '../assets/image/Home-1.png';
+﻿import home1Img from '../assets/image/Home-1.png';
 import home2Img from '../assets/image/Home-2.png';
 import home3Img from '../assets/image/Home-3.png';
 import homeImg from '../assets/image/Home.png';
@@ -8,6 +8,7 @@ import post1Img from '../assets/image/Post 1.PNG';
 import post12Img from '../assets/image/Post 1.2.PNG';
 import post2Img from '../assets/image/Post 2.PNG';
 import post22Img from '../assets/image/Post 2.2.PNG';
+import Text from '../components/Text';
 
 const c1Glob = import.meta.glob('../assets/image/c1 *.png', { eager: true, import: 'default' });
 const getC1Url = (n) => c1Glob[`../assets/image/c1 (${n}).png`];
@@ -22,29 +23,29 @@ export default function CommunityManager() {
           <h2 className="text-[#18191f] text-center text-[35px] border-b py-2 pb-[0.8em]">
             Créer et animer une communauté engagée : le cœur du métier de Community Manager
           </h2>
-          <p className="p-2.5 rounded text-base">
+          <Text className="p-2.5 rounded text-base">
             Dans le monde numérique d'aujourd'hui, la marque ne se contente plus de publier du contenu,
             elle a besoin de créer une communauté forte, fidèle et engagée.
-          </p>
+          </Text>
           <h2 className="w-[85%] mx-auto text-center leading-11 py-2 my-4 text-[35px] text-[#18191f]">Pourquoi créer une communauté engagée ? 💡</h2>
-          <p className="p-2.5 rounded text-base">
+          <Text className="p-2.5 rounded text-base">
             Les algorithmes des réseaux sociaux favorisent le contenu qui suscite des interactions authentiques.
             L'engagement n'est pas un simple chiffre. Cela permet :
-          </p>
+          </Text>
           <ul>
             <li>D'augmenter la visibilité organique (reach),</li>
             <li>De renforcer la fidélité des abonnés,</li>
             <li>De transformer des clients en ambassadeurs,</li>
             <li>De construire une image de marque humaine et proche.</li>
           </ul>
-          <p>Une étude Hootsuite de 2024 montre que les marques ayant une communauté engagée génèrent 3x plus de conversions.</p>
+          <Text>Une étude Hootsuite de 2024 montre que les marques ayant une communauté engagée génèrent 3x plus de conversions.</Text>
         </div>
       </section>
 
       <section className="flex justify-between px-14 py-12 items-center text-[#18191f] bg-[rgba(240,240,240,0.884)] w-4/5 mx-auto rounded-[25px] mt-28 mb-28 max-[800px]:flex-col">
         <div className="w-full m-2 flex justify-between flex-col">
           <h2 className="text-[#18191f] text-center text-[35px] border-b py-2 pb-[0.8em]">Les piliers d'une communauté solide</h2>
-          <p className="p-2.5 rounded text-base">Pour bâtir une relation durable, le community manager s'appuie sur plusieurs leviers :</p>
+          <Text className="p-2.5 rounded text-base">Pour bâtir une relation durable, le community manager s'appuie sur plusieurs leviers :</Text>
           <ol>
             <li>Définir un ton de communication authentique</li>
             <li>Créer du contenu engageant</li>
@@ -63,7 +64,7 @@ export default function CommunityManager() {
             </tbody>
           </table>
           <h3>Conclusion :</h3>
-          <p>Créer et entretenir une communauté engagée, c'est comprendre sa cible, créer du contenu de qualité, écouter et valoriser les membres.</p>
+          <Text>Créer et entretenir une communauté engagée, c'est comprendre sa cible, créer du contenu de qualité, écouter et valoriser les membres.</Text>
         </div>
       </section>
 
@@ -74,7 +75,7 @@ export default function CommunityManager() {
           {[1,2,3,4,5,6].map((n) => (
             <img key={n} className="max-w-fit" src={getC1Url(n)} alt={'calendrier ' + n} />
           ))}
-          <p className="p-2.5 rounded text-base">Mes différentes maquettes :</p>
+          <Text className="p-2.5 rounded text-base">Mes différentes maquettes :</Text>
           <div className="flex w-[90%] justify-evenly flex-row mt-12">
             <img className="w-1/4" src={home1Img} alt="maquette 1" />
             <img className="w-1/4" src={home2Img} alt="maquette 2" />
@@ -85,7 +86,7 @@ export default function CommunityManager() {
             <img className="w-1/4" src={twitterImg} alt="Twitter" />
             <img className="w-1/4" src={linkedinImg} alt="LinkedIn" />
           </div>
-          <p>Mes deux publications :</p>
+          <Text>Mes deux publications :</Text>
           <img className="max-w-fit" src={post1Img} alt="post 1" />
           <img className="max-w-fit" src={post12Img} alt="post 1.2" />
           <img className="max-w-fit" src={post2Img} alt="post 2" />

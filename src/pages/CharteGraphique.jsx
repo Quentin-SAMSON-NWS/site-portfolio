@@ -3,6 +3,7 @@ import pres3Img from '../assets/image/pres3.png';
 import logoInterditImg from '../assets/image/logo interdit.svg';
 import charteCouleurImg from '../assets/image/charte graphique couleur typo.png';
 import chartePdf from '../assets/image/charte graphique pdf.pdf';
+import Text from '../components/Text';
 
 export default function CharteGraphique() {
   return (
@@ -15,15 +16,15 @@ export default function CharteGraphique() {
           <img src={chartePresImg} alt="Sommaire charte graphique" className="w-112.5" />
         </div>
         <div className="m-12">
-          <p className="w-full">Petit aperçu du sommaire de ma charte graphique :</p>
+          <Text className="w-full">Petit aperçu du sommaire de ma charte graphique :</Text>
         </div>
       </div>
 
       <div className="flex items-center justify-center flex-row flex-wrap w-3/4 rounded-[25px] p-8 mx-auto bg-[#18191f] text-base mt-20 mb-20">
         <div className="rounded-[25px] p-8 text-[aliceblue] w-full">
           <h2 className="w-[85%] mx-auto text-[35px] leading-11 text-center text-[#f5f7fa] py-2 my-4">Principes graphiques à respecter</h2>
-          <p>Ce document présente les principes essentiels régissant l'utilisation du logo.</p>
-          <p>Le respect de ces règles est fondamental pour assurer la cohérence de la communication.</p>
+          <Text>Ce document présente les principes essentiels régissant l'utilisation du logo.</Text>
+          <Text>Le respect de ces règles est fondamental pour assurer la cohérence de la communication.</Text>
         </div>
       </div>
 
@@ -44,8 +45,8 @@ export default function CharteGraphique() {
       <div className="flex items-center justify-center flex-row flex-wrap w-3/4 rounded-[25px] p-8 mx-auto bg-[#18191f] text-base mt-20 mb-20">
         <div className="rounded-[25px] p-8 text-[aliceblue] w-full">
           <h2 className="w-[85%] mx-auto text-[35px] leading-11 text-center text-[#f5f7fa] py-2 my-4">Règles du logo</h2>
-          <p>Règle de bon sens : Le logo ne peut pas être modifié ni étiré.</p>
-          <p>Le logo doit toujours être accompagné de son carré de couleur.</p>
+          <Text>Règle de bon sens : Le logo ne peut pas être modifié ni étiré.</Text>
+          <Text>Le logo doit toujours être accompagné de son carré de couleur.</Text>
         </div>
         <div className="flex rounded-[25px] p-8 w-1/2 items-center justify-center">
           <img className="flex items-center h-87.5" src={logoInterditImg} alt="" />
@@ -58,14 +59,14 @@ export default function CharteGraphique() {
         </div>
         <div className="rounded-[25px] p-8 text-[aliceblue] w-full">
           <h2 className="w-[85%] mx-auto text-[35px] leading-11 text-center text-[#f5f7fa] py-2 my-4">Couleurs et typographies</h2>
-          <p>Les couleurs principales sont le bleu, le violet et le noir. La typographie choisie est Poppins.</p>
+          <Text>Les couleurs principales sont le bleu, le violet et le noir. La typographie choisie est Poppins.</Text>
         </div>
       </div>
 
       <div className="flex items-center justify-center flex-row flex-wrap w-3/4 rounded-[25px] p-8 mx-auto bg-[#18191f] text-base mt-20 mb-20">
         <div className="rounded-[25px] p-8 text-[aliceblue] w-full">
           <h2 className="w-[85%] mx-auto text-[35px] leading-11 text-center text-[#f5f7fa] py-2 my-4">Merci !</h2>
-          <p className="text-center">Merci d'avoir pris le temps de parcourir cette charte graphique !</p>
+          <Text className="text-center">Merci d'avoir pris le temps de parcourir cette charte graphique !</Text>
           <div className="text-center mt-16 mb-16">
             <a href={chartePdf} className="w-[90%] max-w-125 h-15 flex items-center justify-center text-center text-[aliceblue] border-2 border-[#ffffff22] rounded-[15px] my-[0.5em] mx-auto bg-[#0f0e0e] transition-all duration-300 ease-in-out text-base relative z-1 overflow-hidden hover:border-transparent hover:[background:linear-gradient(#0f0e0e,#0f0e0e)_padding-box,linear-gradient(145deg,#e81cff,#40c9ff)_border-box] hover:scale-[1.03] hover:animation-[pulse-glow_1.5s_infinite_ease-in-out]">Ma charte graphique</a>
           </div>

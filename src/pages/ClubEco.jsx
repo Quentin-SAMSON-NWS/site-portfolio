@@ -1,6 +1,7 @@
 import banniereImg from '../assets/image/banniere linkedin.png';
 import toteBagImg from '../assets/image/Free_Tote_Bag_Mockup_3 1.png';
 import chartePdf from '../assets/image/Charte.pdf';
+import Text from '../components/Text';
 
 export default function ClubEco() {
   return (
@@ -13,11 +14,11 @@ export default function ClubEco() {
         </div>
         <div className="m-12">
           <h3>Clube Eco Saint Sever</h3>
-          <p className="w-full">
+          <Text className="w-full">
             Il s'agit d'une association qui a contacté la Normandie Web School afin que nous refassions
             la charte graphique de l'association Club Eco Saint-Sever, qui regroupe plus de 40 entreprises.
-          </p>
-          <p>Dans ce projet en groupe, un vainqueur a été désigné pour présenter sa charte graphique.</p>
+          </Text>
+          <Text>Dans ce projet en groupe, un vainqueur a été désigné pour présenter sa charte graphique.</Text>
         </div>
       </div>
 
@@ -26,15 +27,15 @@ export default function ClubEco() {
           <img src={toteBagImg} alt="tote bag" className="h-112.5" />
         </div>
         <div className="rounded-[25px] p-8 text-[aliceblue] w-full">
-          <p>Nous avons refait leur logo, créé des bannières pour leurs réseaux sociaux, et réalisé des mock-ups.</p>
-          <p>Nous avons présenté notre travail devant toute la classe et avons été élus.</p>
+          <Text>Nous avons refait leur logo, créé des bannières pour leurs réseaux sociaux, et réalisé des mock-ups.</Text>
+          <Text>Nous avons présenté notre travail devant toute la classe et avons été élus.</Text>
         </div>
       </div>
 
       <div className="flex items-center justify-center flex-row flex-wrap w-3/4 rounded-[25px] p-8 mx-auto bg-[#18191f] text-base mt-20 mb-20">
         <div className="rounded-[25px] p-8 text-[aliceblue] w-full">
           <h2 className="w-[85%] mx-auto text-[35px] leading-11 text-center text-[#f5f7fa] py-2 my-4">Merci !</h2>
-          <p className="text-center">Merci d'être allé jusqu'ici !</p>
+          <Text className="text-center">Merci d'être allé jusqu'ici !</Text>
           <div className="text-center mt-16 mb-16">
             <a href={chartePdf} className="w-[90%] max-w-125 h-15 flex items-center justify-center text-center text-[aliceblue] border-2 border-[#ffffff22] rounded-[15px] my-[0.5em] mx-auto bg-[#0f0e0e] transition-all duration-300 ease-in-out text-base relative z-1 overflow-hidden hover:border-transparent hover:[background:linear-gradient(#0f0e0e,#0f0e0e)_padding-box,linear-gradient(145deg,#e81cff,#40c9ff)_border-box] hover:scale-[1.03] hover:animation-[pulse-glow_1.5s_infinite_ease-in-out]">Diaporama</a>
           </div>
