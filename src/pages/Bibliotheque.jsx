@@ -1,4 +1,7 @@
-﻿
+import bibliImg from '../assets/image/bibli.PNG';
+import postImg from '../assets/image/post.PNG';
+import mainBibliImg from '../assets/image/main bibli.PNG';
+
 export default function Bibliotheque() {
   return (
     <>
@@ -6,7 +9,7 @@ export default function Bibliotheque() {
 
       <div className="flex items-center justify-center flex-col flex-wrap w-3/4 rounded-[25px] p-8 mx-auto text-white bg-[#18191f] mb-16">
         <div className="flex justify-center items-center">
-          <img src="/image/bibli.PNG" alt="bibli" className="w-112.5" />
+          <img src={bibliImg} alt="bibli" className="w-112.5" />
         </div>
         <div className="m-12">
           <p className="w-full">
@@ -20,8 +23,8 @@ export default function Bibliotheque() {
       <div className="flex items-center justify-center flex-row w-3/4 rounded-[25px] p-8 mx-auto mt-20 text-white bg-[#18191f]">
         <h2 className="w-[85%] mx-auto text-[35px] leading-11 text-center text-[#f5f7fa] py-2 my-4">Un aperçu du site</h2>
         <div className="flex flex-row">
-          <img src="/image/post.PNG" alt="aperçu 1" className="w-112.5" />
-          <img src="/image/main bibli.PNG" alt="aperçu 2" className="w-112.5" />
+          <img src={postImg} alt="aperçu 1" className="w-112.5" />
+          <img src={mainBibliImg} alt="aperçu 2" className="w-112.5" />
         </div>
       </div>
 

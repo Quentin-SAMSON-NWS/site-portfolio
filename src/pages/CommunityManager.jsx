@@ -1,4 +1,17 @@
-﻿
+import home1Img from '../assets/image/Home-1.png';
+import home2Img from '../assets/image/Home-2.png';
+import home3Img from '../assets/image/Home-3.png';
+import homeImg from '../assets/image/Home.png';
+import twitterImg from '../assets/image/Twitter Desktop.png';
+import linkedinImg from '../assets/image/LinkedIn Desktop.png';
+import post1Img from '../assets/image/Post 1.PNG';
+import post12Img from '../assets/image/Post 1.2.PNG';
+import post2Img from '../assets/image/Post 2.PNG';
+import post22Img from '../assets/image/Post 2.2.PNG';
+
+const c1Glob = import.meta.glob('../assets/image/c1 *.png', { eager: true, import: 'default' });
+const getC1Url = (n) => c1Glob[`../assets/image/c1 (${n}).png`];
+
 export default function CommunityManager() {
   return (
     <>
@@ -59,24 +72,24 @@ export default function CommunityManager() {
           <h2 className="text-[#18191f] text-center text-[35px] border-b py-2 pb-[0.8em]">Projet : kensei</h2>
           <h2 className="w-[85%] mx-auto text-center leading-11 py-2 my-4 text-[35px] text-[#18191f]">planning editoriale :</h2>
           {[1,2,3,4,5,6].map((n) => (
-            <img key={n} className="max-w-fit" src={'/image/c1 (' + n + ').png'} alt={'calendrier ' + n} />
+            <img key={n} className="max-w-fit" src={getC1Url(n)} alt={'calendrier ' + n} />
           ))}
           <p className="p-2.5 rounded text-base">Mes différentes maquettes :</p>
           <div className="flex w-[90%] justify-evenly flex-row mt-12">
-            <img className="w-1/4" src="/image/Home-1.png" alt="maquette 1" />
-            <img className="w-1/4" src="/image/Home-2.png" alt="maquette 2" />
-            <img className="w-1/4" src="/image/Home-3.png" alt="maquette 3" />
-            <img className="w-1/4" src="/image/Home.png" alt="maquette 4" />
+            <img className="w-1/4" src={home1Img} alt="maquette 1" />
+            <img className="w-1/4" src={home2Img} alt="maquette 2" />
+            <img className="w-1/4" src={home3Img} alt="maquette 3" />
+            <img className="w-1/4" src={homeImg} alt="maquette 4" />
           </div>
           <div className="flex w-[90%] justify-evenly flex-row mt-12">
-            <img className="w-1/4" src="/image/Twitter Desktop.png" alt="Twitter" />
-            <img className="w-1/4" src="/image/LinkedIn Desktop.png" alt="LinkedIn" />
+            <img className="w-1/4" src={twitterImg} alt="Twitter" />
+            <img className="w-1/4" src={linkedinImg} alt="LinkedIn" />
           </div>
           <p>Mes deux publications :</p>
-          <img className="max-w-fit" src="/image/Post 1.PNG" alt="post 1" />
-          <img className="max-w-fit" src="/image/Post 1.2.PNG" alt="post 1.2" />
-          <img className="max-w-fit" src="/image/Post 2.PNG" alt="post 2" />
-          <img className="max-w-fit" src="/image/Post 2.2.PNG" alt="post 2.2" />
+          <img className="max-w-fit" src={post1Img} alt="post 1" />
+          <img className="max-w-fit" src={post12Img} alt="post 1.2" />
+          <img className="max-w-fit" src={post2Img} alt="post 2" />
+          <img className="max-w-fit" src={post22Img} alt="post 2.2" />
         </div>
       </section>
     </>

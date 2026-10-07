@@ -1,4 +1,8 @@
-﻿
+import handisupImg from '../assets/image/handisup.png';
+import avantImg from '../assets/image/Avant.PNG';
+import avant2Img from '../assets/image/avant2.PNG';
+import newHandisupImg from '../assets/image/Newhandisup.PNG';
+
 export default function Handisup() {
   return (
     <>
@@ -6,7 +10,7 @@ export default function Handisup() {
 
       <div className="flex items-center justify-center flex-col flex-wrap w-3/4 rounded-[25px] p-8 mx-auto text-white bg-[#18191f] mb-16">
         <div className="flex justify-center items-center">
-          <img src="/image/handisup.png" alt="handisup" className="w-112.5" />
+          <img src={handisupImg} alt="handisup" className="w-112.5" />
         </div>
         <div className="m-12">
           <p className="w-full">
@@ -23,16 +27,16 @@ export default function Handisup() {
       <div className="flex items-center justify-center flex-row w-3/4 rounded-[25px] p-8 mx-auto mt-20 text-white bg-[#18191f]">
         <h2 className="w-[85%] mx-auto text-[35px] leading-11 text-center text-[#f5f7fa] py-2 my-4">Avant :</h2>
         <div className="flex flex-row">
-          <img src="/image/Avant.PNG" alt="avant" className="w-112.5" />
-          <img src="/image/avant2.PNG" alt="avant 2" className="w-112.5" />
+          <img src={avantImg} alt="avant" className="w-112.5" />
+          <img src={avant2Img} alt="avant 2" className="w-112.5" />
         </div>
       </div>
 
       <div className="flex items-center justify-center flex-row w-3/4 rounded-[25px] p-8 mx-auto mt-20 text-white bg-[#18191f]">
         <h2 className="w-[85%] mx-auto text-[35px] leading-11 text-center text-[#f5f7fa] py-2 my-4">Après :</h2>
         <div className="flex flex-row">
-          <img src="/image/handisup.png" alt="après" className="w-112.5" />
-          <img src="/image/Newhandisup.PNG" alt="après 2" className="w-112.5" />
+          <img src={handisupImg} alt="après" className="w-112.5" />
+          <img src={newHandisupImg} alt="après 2" className="w-112.5" />
         </div>
       </div>
 

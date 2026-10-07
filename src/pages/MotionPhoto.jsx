@@ -1,4 +1,9 @@
-﻿
+import teaserVideo from '../assets/vidéo/teaser - Trim.mp4';
+import renderVideo from '../assets/vidéo/render_2.mp4';
+
+const photoGlob = import.meta.glob('../assets/image/photo *.JPG', { eager: true, import: 'default' });
+const getPhotoUrl = (n) => photoGlob[`../assets/image/photo (${n}).JPG`];
+
 const photos = [11,21,22,10,19,23,24,29,13,16,17,18,20,1,2,3,4,5,6,7];
 const paysages = [14,15];
 
@@ -17,10 +22,10 @@ export default function MotionPhoto() {
           <p>Le deuxième est un motion design fait avec un tuto youtube pour apprendre les transitions et la caméra 3D.</p>
         </div>
         <div className="w-auto flex justify-center flex-col">
-          <video className="w-[700px] max-[1000px]:w-112.5 max-[728px]:w-[300px]" src="/vidéo/teaser - Trim.mp4" controls autoPlay loop>
+          <video className="w-175 max-[1000px]:w-112.5 max-[728px]:w-75" src={teaserVideo} controls autoPlay loop>
             <source type="video/mp4" />
           </video>
-          <video className="w-[700px] max-[1000px]:w-112.5 max-[728px]:w-[300px]" src="/vidéo/render_2.mp4" controls autoPlay loop>
+          <video className="w-175 max-[1000px]:w-112.5 max-[728px]:w-75" src={renderVideo} controls autoPlay loop>
             <source type="video/mp4" />
           </video>
         </div>
@@ -35,10 +40,10 @@ export default function MotionPhoto() {
           <div className="grid grid-cols-5 grid-rows-5">
             <div className="[grid-area:1/1/6/6]">
               {photos.map((n) => (
-                <img key={n} className="w-[16%]" src={'/image/photo (' + n + ').JPG'} alt="" />
+                <img key={n} className="w-[16%]" src={getPhotoUrl(n)} alt="" />
               ))}
               {paysages.map((n) => (
-                <img key={n} className="w-[29%]" src={'/image/photo (' + n + ').JPG'} alt="" />
+                <img key={n} className="w-[29%]" src={getPhotoUrl(n)} alt="" />
               ))}
             </div>
           </div>

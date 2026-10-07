@@ -1,4 +1,5 @@
-﻿
+import cvPdf from '../assets/image/CV.pdf';
+
 export default function Contacter() {
   return (
     <>
@@ -9,7 +10,7 @@ export default function Contacter() {
           <p>E-mail : samson.quentin13@gmail.com</p>
           <p>Téléphone : 06 49 59 94 47</p>
           <p>Linkedin : Quentin Samson</p>
-          <a href="/image/CV.pdf" className="w-[90%] max-w-[500px] h-[60px] flex items-center justify-center text-center text-[aliceblue] border-2 border-[#ffffff22] rounded-[15px] my-[0.5em] mx-auto bg-[#0f0e0e] transition-all duration-300 ease-in-out text-base relative z-[1] overflow-hidden hover:border-transparent hover:[background:linear-gradient(#0f0e0e,#0f0e0e)_padding-box,linear-gradient(145deg,#e81cff,#40c9ff)_border-box] hover:scale-[1.03] hover:[animation:pulse-glow_1.5s_infinite_ease-in-out]">Mon CV</a>
+          <a href={cvPdf} className="w-[90%] max-w-125 h-15 flex items-center justify-center text-center text-[aliceblue] border-2 border-[#ffffff22] rounded-[15px] my-[0.5em] mx-auto bg-[#0f0e0e] transition-all duration-300 ease-in-out text-base relative z-1 overflow-hidden hover:border-transparent hover:[background:linear-gradient(#0f0e0e,#0f0e0e)_padding-box,linear-gradient(145deg,#e81cff,#40c9ff)_border-box] hover:scale-[1.03] hover:[animation:pulse-glow_1.5s_infinite_ease-in-out]">Mon CV</a>
         </div>
       </div>
     </>
