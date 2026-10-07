@@ -55,7 +55,7 @@ export default function Portfolio() {
                 <div className="w-4/5 m-2 flex justify-between flex-col p-10 text-center max-[850px]:w-full max-[728px]:w-3/4">
                   <h2 className="text-[35px] text-center text-[#f5f7fa] border-b border-[#f5f7fa] py-2 pb-[0.8em]">{p.titre}</h2>
                   <p>{p.desc}</p>
-                  <Link to={p.lien} className="w-[90%] max-w-[500px] h-[60px] flex items-center justify-center text-center text-[aliceblue] border-2 border-[#ffffff22] rounded-[15px] my-[0.5em] mx-auto bg-[#0f0e0e] transition-all duration-300 ease-in-out text-base relative z-[1] overflow-hidden hover:border-transparent hover:[background:linear-gradient(#0f0e0e,#0f0e0e)_padding-box,linear-gradient(145deg,#e81cff,#40c9ff)_border-box] hover:scale-[1.03] hover:[animation:pulse-glow_1.5s_infinite_ease-in-out]">En savoir plus</Link>
+                  <Link to={p.lien} className="w-[90%] max-w-1250 h-15 flex items-center justify-center text-center text-[aliceblue] border-2 border-[#ffffff22] rounded-[15px] my-[0.5em] mx-auto bg-[#0f0e0e] transition-all duration-300 ease-in-out text-base relative z-[1 overflow-hidden hover:border-transparent hover:[background:linear-gradient(#0f0e0e,#0f0e0e)_padding-box,linear-gradient(145deg,#e81cff,#40c9ff)_border-box] hover:scale-[1.03] hover:animation-[pulse-glow_1.5s_infinite_ease-in-out]">En savoir plus</Link>
                 </div>
               </div>
             ))}

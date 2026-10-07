@@ -9,12 +9,12 @@ export default function CommunityManager() {
           <h2 className="text-[#18191f] text-center text-[35px] border-b py-2 pb-[0.8em]">
             Créer et animer une communauté engagée : le cœur du métier de Community Manager
           </h2>
-          <p className="p-[10px] rounded text-base">
+          <p className="p-2.5 rounded text-base">
             Dans le monde numérique d'aujourd'hui, la marque ne se contente plus de publier du contenu,
             elle a besoin de créer une communauté forte, fidèle et engagée.
           </p>
-          <h2 className="w-[85%] mx-auto text-center text-[#f5f7fa] leading-11 py-2 my-4 text-[35px] text-[#18191f]">Pourquoi créer une communauté engagée ? 💡</h2>
-          <p className="p-[10px] rounded text-base">
+          <h2 className="w-[85%] mx-auto text-center leading-11 py-2 my-4 text-[35px] text-[#18191f]">Pourquoi créer une communauté engagée ? 💡</h2>
+          <p className="p-2.5 rounded text-base">
             Les algorithmes des réseaux sociaux favorisent le contenu qui suscite des interactions authentiques.
             L'engagement n'est pas un simple chiffre. Cela permet :
           </p>
@@ -31,7 +31,7 @@ export default function CommunityManager() {
       <section className="flex justify-between px-14 py-12 items-center text-[#18191f] bg-[rgba(240,240,240,0.884)] w-4/5 mx-auto rounded-[25px] mt-28 mb-28 max-[800px]:flex-col">
         <div className="w-full m-2 flex justify-between flex-col">
           <h2 className="text-[#18191f] text-center text-[35px] border-b py-2 pb-[0.8em]">Les piliers d'une communauté solide</h2>
-          <p className="p-[10px] rounded text-base">Pour bâtir une relation durable, le community manager s'appuie sur plusieurs leviers :</p>
+          <p className="p-2.5 rounded text-base">Pour bâtir une relation durable, le community manager s'appuie sur plusieurs leviers :</p>
           <ol>
             <li>Définir un ton de communication authentique</li>
             <li>Créer du contenu engageant</li>
@@ -40,13 +40,13 @@ export default function CommunityManager() {
           </ol>
           <h2 className="w-[85%] mx-auto text-center leading-11 py-2 my-4 text-[35px] text-[#18191f]">🛠️ Outils utiles au Community Manager</h2>
           <table className="border-[3px] border-solid border-collapse">
-            <thead><tr><th className="p-4 border-double border-[2px] font-bold">Outils</th><th className="p-4 border-double border-[2px] font-bold">Utilité principale</th></tr></thead>
+            <thead><tr><th className="p-4 border-double border-2 font-bold">Outils</th><th className="p-4 border-double border-2 font-bold">Utilité principale</th></tr></thead>
             <tbody>
-              <tr><th className="p-4 border-double border-[2px] font-bold">Canva</th><td className="text-center border-solid border-[2px]">créer des visuels attractifs rapidement</td></tr>
-              <tr><th className="p-4 border-double border-[2px] font-bold">Swello / Hootsuite</th><td className="text-center border-solid border-[2px]">Programmer les publications</td></tr>
-              <tr><th className="p-4 border-double border-[2px] font-bold">Notion</th><td className="text-center border-solid border-[2px]">créer un calendrier éditoriale</td></tr>
-              <tr><th className="p-4 border-double border-[2px] font-bold">Metricool</th><td className="text-center border-solid border-[2px]">Suivre les statistiques d'engagement</td></tr>
-              <tr><th className="p-4 border-double border-[2px] font-bold">ChatGPT</th><td className="text-center border-solid border-[2px]">Générer des idées de posts ou de légendes</td></tr>
+              <tr><th className="p-4 border-double border-2 font-bold">Canva</th><td className="text-center border-solid border-2">créer des visuels attractifs rapidement</td></tr>
+              <tr><th className="p-4 border-double border-2 font-bold">Swello / Hootsuite</th><td className="text-center border-solid border-2">Programmer les publications</td></tr>
+              <tr><th className="p-4 border-double border-2 font-bold">Notion</th><td className="text-center border-solid border-2">créer un calendrier éditoriale</td></tr>
+              <tr><th className="p-4 border-double border-2 font-bold">Metricool</th><td className="text-center border-solid border-2">Suivre les statistiques d'engagement</td></tr>
+              <tr><th className="p-4 border-double border-2 font-bold">ChatGPT</th><td className="text-center border-solid border-2">Générer des idées de posts ou de légendes</td></tr>
             </tbody>
           </table>
           <h3>Conclusion :</h3>
@@ -61,7 +61,7 @@ export default function CommunityManager() {
           {[1,2,3,4,5,6].map((n) => (
             <img key={n} className="max-w-fit" src={'/image/c1 (' + n + ').png'} alt={'calendrier ' + n} />
           ))}
-          <p className="p-[10px] rounded text-base">Mes différentes maquettes :</p>
+          <p className="p-2.5 rounded text-base">Mes différentes maquettes :</p>
           <div className="flex w-[90%] justify-evenly flex-row mt-12">
             <img className="w-1/4" src="/image/Home-1.png" alt="maquette 1" />
             <img className="w-1/4" src="/image/Home-2.png" alt="maquette 2" />
