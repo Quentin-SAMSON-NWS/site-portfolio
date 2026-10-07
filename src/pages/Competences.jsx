@@ -1,6 +1,4 @@
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
-
+﻿
 const cards = [
   { titre: 'Photographie', titreDos: 'Photos', items: ['Retouche photo', 'Prise de vue'], desc: "Je capture des couchers de soleil et des paysages dès que l'occasion se présente." },
   { titre: 'création graphique', titreDos: 'Graphisme', items: ['Illustrator', 'photoshop', 'charte graphique', 'logos'], desc: "Je maîtrise Illustrator, Photoshop et InDesign. J'ai conçu plusieurs logos et chartes graphiques." },
@@ -19,30 +17,26 @@ const ArrowSvg = () => (
 export default function Competences() {
   return (
     <>
-      <Navbar />
-      <main>
-        <section>
-          <h2 className="w-[85%] mx-auto text-[45px] leading-[44px] text-center text-white border-b border-[#f5f7fa] py-2 my-4" id="Competences">Compétences</h2>
-          <div className="w-[90%] mx-auto flex flex-row flex-wrap justify-around p-[5%]">
-            {cards.map((card, i) => (
-              <div key={i} className="m-[30px_40px] w-[450px] h-[550px] [perspective:1000px] carte-certif" tabIndex={0}>
-                <div className="carte">
-                  <div className="carte-certif-face-avant">
-                    <h2 className="text-2xl px-[10px]">{card.titre}</h2>
-                    <ArrowSvg />
-                  </div>
-                  <div className="carte-certif-face-arriere">
-                    <h3 className="text-center text-2xl">{card.titreDos}</h3>
-                    <ul>{card.items.map((item, j) => <li key={j}>{item}</li>)}</ul>
-                    <p>{card.desc}</p>
-                  </div>
+      <section>
+        <h2 className="w-[85%] mx-auto text-[45px] leading-11 text-center text-white border-b border-[#f5f7fa] py-2 my-4" id="Competences">Compétences</h2>
+        <div className="w-[90%] mx-auto flex flex-row flex-wrap justify-around p-[5%]">
+          {cards.map((card, i) => (
+            <div key={i} className="m-[30px_40px] w-112.5 h-[550px] [perspective:1000px] group" tabIndex={0}>
+              <div className="w-full h-full text-center [transition:transform_0.8s] [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] group-focus:[transform:rotateY(180deg)]">
+                <div className="absolute flex flex-col justify-center w-full h-full [backface-visibility:hidden] rounded-[20px] bg-[#141414] text-white p-[0.5em]">
+                  <h2 className="text-2xl px-[10px]">{card.titre}</h2>
+                  <ArrowSvg />
+                </div>
+                <div className="absolute flex flex-col justify-center w-full h-full [backface-visibility:hidden] rounded-[20px] bg-[#141414] text-white p-[0.5em] [transform:rotateY(180deg)]">
+                  <h3 className="text-center text-2xl">{card.titreDos}</h3>
+                  <ul>{card.items.map((item, j) => <li key={j}>{item}</li>)}</ul>
+                  <p>{card.desc}</p>
                 </div>
               </div>
-            ))}
-          </div>
-        </section>
-      </main>
-      <Footer />
+            </div>
+          ))}
+        </div>
+      </section>
     </>
   );
 }

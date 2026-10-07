@@ -1,11 +1,8 @@
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
-
+﻿
 export default function MentionLegales() {
   return (
     <>
-      <Navbar />
-      <h1 className="w-[85%] mx-auto text-[45px] leading-[44px] text-center text-white border-b border-[#f5f7fa] py-2 my-4">Mentions Légales</h1>
+      <h1 className="w-[85%] mx-auto text-[45px] leading-11 text-center text-white border-b border-[#f5f7fa] py-2 my-4">Mentions Légales</h1>
       <section className="w-[85%] rounded-[26px] mx-auto bg-[#131010] px-14 py-12 mt-10 mb-12 text-white">
         <h2>1. Éditeur du Site</h2>
         <ul>
@@ -26,7 +23,6 @@ export default function MentionLegales() {
         <h2>6. Droit Applicable</h2>
         <p>Les présentes mentions légales sont régies par le droit français.</p>
       </section>
-      <Footer />
     </>
   );
 }

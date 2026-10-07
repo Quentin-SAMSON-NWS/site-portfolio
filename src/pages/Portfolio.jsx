@@ -1,6 +1,4 @@
-import { Link } from 'react-router-dom';
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
+﻿import { Link } from 'react-router-dom';
 
 const rows = [
   [
@@ -45,41 +43,37 @@ const perso = [
 export default function Portfolio() {
   return (
     <>
-      <Navbar />
-      <main>
-        <h2 className="w-[85%] mx-auto text-[45px] leading-[44px] text-center text-white border-b border-[#f5f7fa] py-2 my-4" id="Portfolio">Portfolio</h2>
-        <div id="Portfolio">
-          {rows.map((row, ri) => (
-            <div key={ri} className="flex justify-between items-center max-[728px]:flex-col max-[728px]:items-center">
-              {row.map((p, i) => (
-                <div key={i} className="flex justify-evenly w-[85%] rounded-[26px] mx-[2.5em] bg-[#131010] px-14 py-12 mt-10 mb-12 items-center text-white flex-col max-[850px]:p-5 max-[728px]:flex-col max-[728px]:items-center">
-                  <div className="w-2/5 flex justify-center m-2 max-[850px]:w-full">
-                    <img src={p.image} alt={p.alt} className="w-full max-[850px]:max-w-[80%]" />
-                  </div>
-                  <div className="w-4/5 m-2 flex justify-between flex-col p-10 text-center max-[850px]:w-full max-[728px]:w-3/4">
-                    <h2 className="text-[35px] text-center text-[#f5f7fa] border-b border-[#f5f7fa] py-2 pb-[0.8em]">{p.titre}</h2>
-                    <p>{p.desc}</p>
-                    <Link to={p.lien} className="btn-glow">En savoir plus</Link>
-                  </div>
+      <h2 className="w-[85%] mx-auto text-[45px] leading-11 text-center text-white border-b border-[#f5f7fa] py-2 my-4" id="Portfolio">Portfolio</h2>
+      <div id="Portfolio">
+        {rows.map((row, ri) => (
+          <div key={ri} className="flex justify-between items-center max-[728px]:flex-col max-[728px]:items-center">
+            {row.map((p, i) => (
+              <div key={i} className="flex justify-evenly w-[85%] rounded-[26px] mx-[2.5em] bg-[#131010] px-14 py-12 mt-10 mb-12 items-center text-white flex-col max-[850px]:p-5 max-[728px]:flex-col max-[728px]:items-center">
+                <div className="w-2/5 flex justify-center m-2 max-[850px]:w-full">
+                  <img src={p.image} alt={p.alt} className="w-full max-[850px]:max-w-[80%]" />
                 </div>
-              ))}
-            </div>
-          ))}
-          <h3 className="w-[85%] mx-auto text-[45px] leading-[44px] text-center text-white border-b border-[#f5f7fa] py-2 my-4" id="Projet">Projet</h3>
-          {perso.map((p, i) => (
-            <div key={i} className="flex justify-evenly w-[85%] rounded-[26px] mx-[2.5em] bg-[#131010] px-14 py-12 mt-10 mb-12 items-center text-white flex-col max-[728px]:flex-col max-[728px]:items-center">
-              <div className="w-2/5 flex justify-center m-2">
-                <img src={p.image} alt={p.alt} className="w-full" />
+                <div className="w-4/5 m-2 flex justify-between flex-col p-10 text-center max-[850px]:w-full max-[728px]:w-3/4">
+                  <h2 className="text-[35px] text-center text-[#f5f7fa] border-b border-[#f5f7fa] py-2 pb-[0.8em]">{p.titre}</h2>
+                  <p>{p.desc}</p>
+                  <Link to={p.lien} className="w-[90%] max-w-[500px] h-[60px] flex items-center justify-center text-center text-[aliceblue] border-2 border-[#ffffff22] rounded-[15px] my-[0.5em] mx-auto bg-[#0f0e0e] transition-all duration-300 ease-in-out text-base relative z-[1] overflow-hidden hover:border-transparent hover:[background:linear-gradient(#0f0e0e,#0f0e0e)_padding-box,linear-gradient(145deg,#e81cff,#40c9ff)_border-box] hover:scale-[1.03] hover:[animation:pulse-glow_1.5s_infinite_ease-in-out]">En savoir plus</Link>
+                </div>
               </div>
-              <div className="w-4/5 m-2 flex justify-between flex-col p-10 text-center max-[728px]:w-3/4">
-                <h2 className="text-[35px] text-center text-[#f5f7fa] border-b border-[#f5f7fa] py-2 pb-[0.8em]">{p.titre}</h2>
-                <p>{p.desc}</p>
-              </div>
+            ))}
+          </div>
+        ))}
+        <h3 className="w-[85%] mx-auto text-[45px] leading-11 text-center text-white border-b border-[#f5f7fa] py-2 my-4" id="Projet">Projet</h3>
+        {perso.map((p, i) => (
+          <div key={i} className="flex justify-evenly w-[85%] rounded-[26px] mx-[2.5em] bg-[#131010] px-14 py-12 mt-10 mb-12 items-center text-white flex-col max-[728px]:flex-col max-[728px]:items-center">
+            <div className="w-2/5 flex justify-center m-2">
+              <img src={p.image} alt={p.alt} className="w-full" />
             </div>
-          ))}
-        </div>
-      </main>
-      <Footer />
+            <div className="w-4/5 m-2 flex justify-between flex-col p-10 text-center max-[728px]:w-3/4">
+              <h2 className="text-[35px] text-center text-[#f5f7fa] border-b border-[#f5f7fa] py-2 pb-[0.8em]">{p.titre}</h2>
+              <p>{p.desc}</p>
+            </div>
+          </div>
+        ))}
+      </div>
     </>
   );
 }
